@@ -1,0 +1,462 @@
+{
+ "task": "sentiment",
+ "labels": [
+  "positive",
+  "neutral",
+  "negative"
+ ],
+ "guideline": "Nada keseluruhan teks terhadap situasi: negatif = kerugian/bahaya/keluhan/kekecewaan; positif = pemulihan/keberhasilan/kepuasan; netral = informasi datar tanpa valensi.",
+ "items": [
+  {
+   "id": "SEN-001",
+   "text": "Listrik di seluruh kecamatan sudah pulih dan layanan berjalan lancar kembali.",
+   "label": "positive",
+   "split": "dev"
+  },
+  {
+   "id": "SEN-002",
+   "text": "Jembatan ambruk dan puluhan warga terjebak, situasi sangat kacau.",
+   "label": "negative",
+   "split": "dev"
+  },
+  {
+   "id": "SEN-003",
+   "text": "Dinas perhubungan mengumumkan jadwal baru keberangkatan kereta mulai pekan depan.",
+   "label": "neutral",
+   "split": "dev"
+  },
+  {
+   "id": "SEN-004",
+   "text": "Warga bersyukur bantuan logistik tiba tepat waktu dan dibagikan secara adil.",
+   "label": "positive",
+   "split": "dev"
+  },
+  {
+   "id": "SEN-005",
+   "text": "Warga panik karena air bah menerjang permukiman dan listrik padam.",
+   "label": "negative",
+   "split": "dev"
+  },
+  {
+   "id": "SEN-006",
+   "text": "Rapat koordinasi membahas anggaran daerah akan digelar Kamis pukul 10.00.",
+   "label": "neutral",
+   "split": "dev"
+  },
+  {
+   "id": "SEN-007",
+   "text": "Program vaksinasi berhasil menjangkau seluruh desa, petugas sangat sigap.",
+   "label": "positive",
+   "split": "dev"
+  },
+  {
+   "id": "SEN-008",
+   "text": "Pelayanan kantor kelurahan mengecewakan, antre berjam-jam tanpa kepastian.",
+   "label": "negative",
+   "split": "dev"
+  },
+  {
+   "id": "SEN-009",
+   "text": "BMKG merilis prakiraan cuaca untuk wilayah Jawa Barat hari ini.",
+   "label": "neutral",
+   "split": "dev"
+  },
+  {
+   "id": "SEN-010",
+   "text": "Jembatan yang rusak akhirnya selesai diperbaiki, lalu lintas kembali normal.",
+   "label": "positive",
+   "split": "dev"
+  },
+  {
+   "id": "SEN-011",
+   "text": "Harga cabai melonjak parah, pedagang dan pembeli sama-sama menderita.",
+   "label": "negative",
+   "split": "dev"
+  },
+  {
+   "id": "SEN-012",
+   "text": "Pemerintah kota memperbarui jam operasional kantor pelayanan.",
+   "label": "neutral",
+   "split": "dev"
+  },
+  {
+   "id": "SEN-013",
+   "text": "Kami sangat puas dengan pelayanan puskesmas yang ramah dan cepat.",
+   "label": "positive",
+   "split": "dev"
+  },
+  {
+   "id": "SEN-014",
+   "text": "Kebakaran hebat menghanguskan puluhan rumah, beberapa korban meninggal.",
+   "label": "negative",
+   "split": "dev"
+  },
+  {
+   "id": "SEN-015",
+   "text": "Kemendikbud menerbitkan panduan pelaksanaan ujian tahun ini.",
+   "label": "neutral",
+   "split": "dev"
+  },
+  {
+   "id": "SEN-016",
+   "text": "Situasi sudah terkendali, pengungsi dalam kondisi aman dan sehat.",
+   "label": "positive",
+   "split": "dev"
+  },
+  {
+   "id": "SEN-017",
+   "text": "Data pribadi jutaan pengguna bocor dan diretas, sangat meresahkan.",
+   "label": "negative",
+   "split": "dev"
+  },
+  {
+   "id": "SEN-018",
+   "text": "Pendaftaran peserta didik baru dibuka pada tanggal 5 sampai 12 Juni.",
+   "label": "neutral",
+   "split": "dev"
+  },
+  {
+   "id": "SEN-019",
+   "text": "Sekolah kembali dibuka dan siswa senang bisa belajar lagi.",
+   "label": "positive",
+   "split": "test"
+  },
+  {
+   "id": "SEN-020",
+   "text": "Banyak pasien mengeluh obat langka dan rumah sakit penuh sesak.",
+   "label": "negative",
+   "split": "test"
+  },
+  {
+   "id": "SEN-021",
+   "text": "Gubernur meninjau lokasi proyek jalan di dua kabupaten.",
+   "label": "neutral",
+   "split": "test"
+  },
+  {
+   "id": "SEN-022",
+   "text": "Pemerintah daerah tanggap, air bersih sudah tersedia di semua posko.",
+   "label": "positive",
+   "split": "test"
+  },
+  {
+   "id": "SEN-023",
+   "text": "Pasokan makanan bantuan terkontaminasi dan puluhan orang keracunan.",
+   "label": "negative",
+   "split": "test"
+  },
+  {
+   "id": "SEN-024",
+   "text": "Stasiun menambah satu loket untuk penumpang kereta jarak jauh.",
+   "label": "neutral",
+   "split": "test"
+  },
+  {
+   "id": "SEN-025",
+   "text": "Harga beras mulai turun dan pasokan di pasar membaik.",
+   "label": "positive",
+   "split": "test"
+  },
+  {
+   "id": "SEN-026",
+   "text": "Proyek jalan rusak lagi, kontraktor dinilai lalai dan tidak becus.",
+   "label": "negative",
+   "split": "test"
+  },
+  {
+   "id": "SEN-027",
+   "text": "Pertemuan tahunan asosiasi pengusaha berlangsung di Surabaya.",
+   "label": "neutral",
+   "split": "test"
+  },
+  {
+   "id": "SEN-028",
+   "text": "Pembangunan bendungan baru membanggakan warga, irigasi jadi lancar.",
+   "label": "positive",
+   "split": "test"
+  },
+  {
+   "id": "SEN-029",
+   "text": "Kami kecewa, pemerintah lamban dan korban longsor belum tersentuh bantuan.",
+   "label": "negative",
+   "split": "test"
+  },
+  {
+   "id": "SEN-030",
+   "text": "Dinas kesehatan menyampaikan data kunjungan puskesmas bulan ini.",
+   "label": "neutral",
+   "split": "test"
+  },
+  {
+   "id": "SEN-031",
+   "text": "Tim evakuasi bekerja luar biasa, semua korban berhasil diselamatkan.",
+   "label": "positive",
+   "split": "test"
+  },
+  {
+   "id": "SEN-032",
+   "text": "Kerusuhan pecah, toko dijarah dan situasi sangat mencekam.",
+   "label": "negative",
+   "split": "test"
+  },
+  {
+   "id": "SEN-033",
+   "text": "Pengumuman hasil seleksi dapat dilihat melalui laman resmi.",
+   "label": "neutral",
+   "split": "test"
+  },
+  {
+   "id": "SEN-034",
+   "text": "Mantap, aplikasi layanan pajak sekarang mudah dan nyaman dipakai.",
+   "label": "positive",
+   "split": "test"
+  },
+  {
+   "id": "SEN-035",
+   "text": "Air sungai tercemar limbah, ikan mati dan warga sakit kulit.",
+   "label": "negative",
+   "split": "test"
+  },
+  {
+   "id": "SEN-036",
+   "text": "Kementerian mengadakan sosialisasi aturan baru perpajakan.",
+   "label": "neutral",
+   "split": "test"
+  },
+  {
+   "id": "SEN-037",
+   "text": "Terima kasih petugas, jalan sudah bersih dan akses kembali dibuka.",
+   "label": "positive",
+   "split": "test"
+  },
+  {
+   "id": "SEN-038",
+   "text": "Pungli di terminal merugikan sopir dan penumpang, memalukan.",
+   "label": "negative",
+   "split": "test"
+  },
+  {
+   "id": "SEN-039",
+   "text": "Proyek jembatan memasuki tahap pengerjaan fondasi.",
+   "label": "neutral",
+   "split": "test"
+  },
+  {
+   "id": "SEN-040",
+   "text": "Kondisi kota kondusif dan damai selama perayaan berlangsung.",
+   "label": "positive",
+   "split": "test"
+  },
+  {
+   "id": "SEN-041",
+   "text": "Pemadaman listrik berkepanjangan membuat usaha kecil bangkrut.",
+   "label": "negative",
+   "split": "test"
+  },
+  {
+   "id": "SEN-042",
+   "text": "Tim survei mencatat jumlah penduduk di tiga kelurahan.",
+   "label": "neutral",
+   "split": "test"
+  },
+  {
+   "id": "SEN-043",
+   "text": "Alhamdulillah, hasil pemeriksaan menunjukkan air aman diminum.",
+   "label": "positive",
+   "split": "test"
+  },
+  {
+   "id": "SEN-044",
+   "text": "Wabah demam berdarah meluas, rumah sakit kewalahan menangani pasien.",
+   "label": "negative",
+   "split": "test"
+  },
+  {
+   "id": "SEN-045",
+   "text": "Perusahaan listrik menyampaikan jadwal pemeliharaan jaringan.",
+   "label": "neutral",
+   "split": "test"
+  },
+  {
+   "id": "SEN-046",
+   "text": "Penghargaan nasional diraih puskesmas kami berkat inovasi layanan.",
+   "label": "positive",
+   "split": "test"
+  },
+  {
+   "id": "SEN-047",
+   "text": "Penipuan online marak, ratusan korban kehilangan tabungan.",
+   "label": "negative",
+   "split": "test"
+  },
+  {
+   "id": "SEN-048",
+   "text": "Polisi menggelar pemeriksaan kendaraan di sejumlah ruas jalan.",
+   "label": "neutral",
+   "split": "test"
+  },
+  {
+   "id": "SEN-049",
+   "text": "Gratis dan mudah, pendaftaran beasiswa berjalan transparan.",
+   "label": "positive",
+   "split": "test"
+  },
+  {
+   "id": "SEN-050",
+   "text": "Sekolah ambruk saat jam belajar, orang tua cemas dan marah.",
+   "label": "negative",
+   "split": "test"
+  },
+  {
+   "id": "SEN-051",
+   "text": "Layanan administrasi kependudukan tersedia setiap hari kerja.",
+   "label": "neutral",
+   "split": "test"
+  },
+  {
+   "id": "SEN-052",
+   "text": "Warga lega karena listrik menyala lagi dan sinyal telekomunikasi stabil.",
+   "label": "positive",
+   "split": "test"
+  },
+  {
+   "id": "SEN-053",
+   "text": "Kemacetan parah dan jalan berlubang bikin warga resah setiap hari.",
+   "label": "negative",
+   "split": "test"
+  },
+  {
+   "id": "SEN-054",
+   "text": "Seminar nasional tentang keamanan siber diadakan di Jakarta.",
+   "label": "neutral",
+   "split": "test"
+  },
+  {
+   "id": "SEN-055",
+   "text": "Perbaikan drainase efektif, kampung kami tidak lagi tergenang.",
+   "label": "positive",
+   "split": "test"
+  },
+  {
+   "id": "SEN-056",
+   "text": "Gempa merusak ratusan rumah, ribuan warga mengungsi ke tenda darurat.",
+   "label": "negative",
+   "split": "test"
+  },
+  {
+   "id": "SEN-057",
+   "text": "Pemerintah provinsi menerima kunjungan delegasi dari negara tetangga.",
+   "label": "neutral",
+   "split": "test"
+  },
+  {
+   "id": "SEN-058",
+   "text": "Peringatan dini berfungsi baik sehingga warga sempat mengungsi dengan selamat.",
+   "label": "positive",
+   "split": "test"
+  },
+  {
+   "id": "SEN-059",
+   "text": "Hoaks menyesatkan memicu kepanikan dan merugikan banyak orang.",
+   "label": "negative",
+   "split": "test"
+  },
+  {
+   "id": "SEN-060",
+   "text": "Harga bahan pokok dilaporkan stabil dibandingkan pekan lalu.",
+   "label": "neutral",
+   "split": "test"
+  },
+  {
+   "id": "SEN-C01",
+   "text": "gila sih pelayanannya, nunggu 4 jam cuma buat tanda tangan doang",
+   "label": "negative",
+   "split": "challenge"
+  },
+  {
+   "id": "SEN-C02",
+   "text": "lumayan lah jalannya udah mulus sekarang",
+   "label": "positive",
+   "split": "challenge"
+  },
+  {
+   "id": "SEN-C03",
+   "text": "bukan main, kerja petugasnya cepat banget",
+   "label": "positive",
+   "split": "challenge"
+  },
+  {
+   "id": "SEN-C04",
+   "text": "Mantul banget solusi dari dinas, warga ketawa lega",
+   "label": "positive",
+   "split": "challenge"
+  },
+  {
+   "id": "SEN-C05",
+   "text": "Tidak ada korban jiwa dalam kejadian itu, warga bersyukur",
+   "label": "positive",
+   "split": "challenge"
+  },
+  {
+   "id": "SEN-C06",
+   "text": "Wah ini sih zonk, kecewa berat sama aplikasinya error terus",
+   "label": "negative",
+   "split": "challenge"
+  },
+  {
+   "id": "SEN-C07",
+   "text": "ga nyangka ternyata prosesnya gampang dan murah",
+   "label": "positive",
+   "split": "challenge"
+  },
+  {
+   "id": "SEN-C08",
+   "text": "pengumuman dibacakan pukul sembilan di balai desa",
+   "label": "neutral",
+   "split": "challenge"
+  },
+  {
+   "id": "SEN-C09",
+   "text": "pak lurah cuma bilang nanti dikabari lagi",
+   "label": "neutral",
+   "split": "challenge"
+  },
+  {
+   "id": "SEN-C10",
+   "text": "Katanya sih bakal ada perbaikan, tapi warga sudah capek menunggu",
+   "label": "negative",
+   "split": "challenge"
+  },
+  {
+   "id": "SEN-C11",
+   "text": "Seneng banget akhirnya air ngalir lagi",
+   "label": "positive",
+   "split": "challenge"
+  },
+  {
+   "id": "SEN-C12",
+   "text": "Harganya masih sama kayak minggu lalu",
+   "label": "neutral",
+   "split": "challenge"
+  },
+  {
+   "id": "SEN-C13",
+   "text": "Bohong banget, ga ada bantuan sama sekali yang datang",
+   "label": "negative",
+   "split": "challenge"
+  },
+  {
+   "id": "SEN-C14",
+   "text": "jalan yang dulu hancur kini sudah mulus berkat perbaikan",
+   "label": "positive",
+   "split": "challenge"
+  },
+  {
+   "id": "SEN-C15",
+   "text": "Rapat evaluasi digelar untuk membahas banjir bulan lalu",
+   "label": "neutral",
+   "split": "challenge"
+  }
+ ],
+ "split_note": "Split dev/test stratif per kelas (30%/70%, urutan sesuai berkas); split \"challenge\" ditulis terpisah dan tidak dipakai menyetel model."
+}

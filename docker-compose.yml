@@ -1,0 +1,12 @@
+services:
+  garda:
+    build: .
+    ports: ["127.0.0.1:8787:8787"]     # ekspos lewat reverse proxy HTTPS, bukan langsung
+    environment:
+      GARDA_API_TOKEN: "${GARDA_API_TOKEN:?isi token API}"
+      GARDA_CONTACT: "${GARDA_CONTACT:-redaksi@contoh.org}"
+      SCHEDULER: "true"
+      FOUR_EYES: "true"
+    volumes: ["garda-data:/data"]
+    restart: unless-stopped
+volumes: { garda-data: {} }

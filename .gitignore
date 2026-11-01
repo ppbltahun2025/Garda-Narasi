@@ -1,0 +1,4 @@
+data/garda.db*
+backups/
+.env
+node_modules/

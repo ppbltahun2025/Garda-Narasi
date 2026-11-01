@@ -1,0 +1,323 @@
+[
+  {
+    "id": "GN-DEMO-001",
+    "date": "2026-10-31T10:12:00+07:00",
+    "firstSeen": "2026-10-31T07:10:00+07:00",
+    "title": "Klaim penutupan jalur evakuasi di Teluk Aruna",
+    "claim": "Pesan berantai menyebut jalur evakuasi wilayah Teluk Aruna ditutup mulai pukul 18.00 karena kondisi jembatan tidak aman.",
+    "topic": "Bencana & keselamatan",
+    "region": "Teluk Aruna (wilayah fiktif)",
+    "source": "Simulasi kanal pesan",
+    "sourceUrl": "",
+    "channels": [
+      "Simulasi kanal pesan",
+      "Simulasi forum publik",
+      "Dataset latihan"
+    ],
+    "mentions": 46,
+    "status": "needs-review",
+    "hourlyCounts": [
+      2,
+      3,
+      3,
+      4,
+      4,
+      5,
+      7,
+      8,
+      9,
+      12,
+      16,
+      22
+    ],
+    "isSynthetic": true
+  },
+  {
+    "id": "GN-DEMO-002",
+    "date": "2026-10-31T09:40:00+07:00",
+    "firstSeen": "2026-10-30T22:00:00+07:00",
+    "title": "Video antrean bantuan lama beredar kembali",
+    "claim": "Video antrean bantuan yang dibuat pada waktu simulasi sebelumnya diunggah ulang seolah-olah merekam keadaan hari ini.",
+    "topic": "Bencana & keselamatan",
+    "region": "Kota Nusa Rimba (wilayah fiktif)",
+    "source": "Simulasi platform berbagi video",
+    "channels": [
+      "Simulasi platform berbagi video",
+      "Dataset latihan"
+    ],
+    "mentions": 31,
+    "status": "context-needed",
+    "verificationNote": "Contoh untuk latihan pemeriksaan tanggal unggahan dan konteks visual.",
+    "hourlyCounts": [
+      1,
+      1,
+      2,
+      2,
+      3,
+      3,
+      4,
+      4,
+      4,
+      5,
+      7,
+      8
+    ],
+    "isSynthetic": true
+  },
+  {
+    "id": "GN-DEMO-003",
+    "date": "2026-10-31T08:15:00+07:00",
+    "firstSeen": "2026-10-31T07:50:00+07:00",
+    "title": "Informasi gangguan layanan air selama 72 jam",
+    "claim": "Sebuah pesan menyatakan layanan air bersih di Kecamatan Puspa akan berhenti total selama 72 jam tanpa menyertakan pengumuman resmi.",
+    "topic": "Layanan publik",
+    "region": "Kecamatan Puspa (wilayah fiktif)",
+    "source": "Simulasi grup komunitas",
+    "channels": [
+      "Simulasi grup komunitas",
+      "Simulasi forum publik",
+      "Dataset latihan",
+      "Simulasi kanal pesan"
+    ],
+    "mentions": 58,
+    "status": "needs-review",
+    "hourlyCounts": [
+      1,
+      2,
+      2,
+      3,
+      4,
+      5,
+      7,
+      9,
+      12,
+      13,
+      17,
+      19
+    ],
+    "isSynthetic": true
+  },
+  {
+    "id": "GN-DEMO-004",
+    "date": "2026-10-30T19:20:00+07:00",
+    "firstSeen": "2026-10-30T17:20:00+07:00",
+    "title": "Klaim jembatan Merdeka putus akibat banjir",
+    "claim": "Unggahan menyebut Jembatan Merdeka di Kota Nusa Rimba putus akibat banjir dan meminta pengguna jalan mencari jalur alternatif.",
+    "topic": "Infrastruktur",
+    "region": "Kota Nusa Rimba (wilayah fiktif)",
+    "source": "Simulasi forum publik",
+    "channels": [
+      "Simulasi forum publik",
+      "Dataset latihan"
+    ],
+    "mentions": 24,
+    "status": "needs-review",
+    "hourlyCounts": [
+      1,
+      1,
+      2,
+      2,
+      3,
+      3,
+      3,
+      4,
+      5,
+      7,
+      6,
+      5
+    ],
+    "isSynthetic": true
+  },
+  {
+    "id": "GN-DEMO-005",
+    "date": "2026-10-30T15:00:00+07:00",
+    "firstSeen": "2026-10-29T11:00:00+07:00",
+    "title": "Pengumuman pembukaan pos layanan kesehatan",
+    "claim": "Informasi menyebut pos layanan kesehatan di Balai Warga Puspa telah dibuka dan menyediakan pemeriksaan dasar pada jam layanan yang diumumkan.",
+    "topic": "Kesehatan publik",
+    "region": "Kecamatan Puspa (wilayah fiktif)",
+    "source": "Simulasi pengumuman layanan",
+    "channels": [
+      "Simulasi pengumuman layanan",
+      "Dataset latihan"
+    ],
+    "mentions": 17,
+    "status": "verified",
+    "verificationNote": "Dalam skenario sintetis, isi klaim cocok dengan catatan latihan DEMO-EVIDENCE-005 pada data/demo-evidence.md.",
+    "evidenceUrl": "",
+    "hourlyCounts": [
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1
+    ],
+    "isSynthetic": true
+  },
+  {
+    "id": "GN-DEMO-006",
+    "date": "2026-10-29T13:25:00+07:00",
+    "firstSeen": "2026-10-29T09:00:00+07:00",
+    "title": "Klaim seluruh pasokan pangan bantuan terkontaminasi",
+    "claim": "Pesan tanpa sumber menyebut seluruh pasokan pangan bantuan di wilayah simulasi telah terkontaminasi dan meminta warga membuang semua bantuan.",
+    "topic": "Kesehatan publik",
+    "region": "Wilayah latihan nasional (fiktif)",
+    "source": "Simulasi kanal pesan",
+    "channels": [
+      "Simulasi kanal pesan",
+      "Simulasi forum publik"
+    ],
+    "mentions": 39,
+    "status": "needs-review",
+    "hourlyCounts": [
+      2,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      8,
+      9,
+      10,
+      10
+    ],
+    "isSynthetic": true
+  },
+  {
+    "id": "GN-DEMO-007",
+    "date": "2026-10-28T10:00:00+07:00",
+    "firstSeen": "2026-10-28T08:00:00+07:00",
+    "title": "Jadwal layanan administrasi tetap berjalan",
+    "claim": "Pengumuman latihan menyebut layanan administrasi di Pusat Pelayanan Nusa Rimba tetap berjalan pada jam operasional normal.",
+    "topic": "Layanan publik",
+    "region": "Kota Nusa Rimba (wilayah fiktif)",
+    "source": "Simulasi pengumuman resmi",
+    "channels": [
+      "Simulasi pengumuman resmi"
+    ],
+    "mentions": 9,
+    "status": "verified",
+    "verificationNote": "Dalam skenario sintetis, jadwal cocok dengan catatan latihan DEMO-EVIDENCE-007 pada data/demo-evidence.md.",
+    "evidenceUrl": "",
+    "hourlyCounts": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "isSynthetic": true
+  },
+  {
+    "id": "GN-DEMO-008",
+    "date": "2026-10-31T11:30:00+07:00",
+    "firstSeen": "2026-10-31T10:40:00+07:00",
+    "title": "Perubahan lokasi titik kumpul warga",
+    "claim": "Pesan komunitas menyebut titik kumpul warga berpindah dari Lapangan Utama ke Gedung Serbaguna, tetapi waktu dan sumber keputusan belum dicantumkan.",
+    "topic": "Bencana & keselamatan",
+    "region": "Teluk Aruna (wilayah fiktif)",
+    "source": "Simulasi kanal komunitas",
+    "channels": [
+      "Simulasi kanal komunitas",
+      "Simulasi grup komunitas"
+    ],
+    "mentions": 21,
+    "status": "needs-review",
+    "hourlyCounts": [
+      0,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      3,
+      3,
+      4,
+      4,
+      5
+    ],
+    "isSynthetic": true
+  },
+  {
+    "id": "GN-DEMO-009",
+    "date": "2026-10-31T11:50:00+07:00",
+    "firstSeen": "2026-10-31T11:44:00+07:00",
+    "title": "Pesan berulang tentang gangguan layanan air 72 jam",
+    "claim": "Pesan menyebut layanan air bersih Kecamatan Puspa akan berhenti total selama 72 jam akibat gangguan jaringan. Warga diminta menampung air tanpa menyertakan pengumuman resmi.",
+    "topic": "Layanan publik",
+    "region": "Kecamatan Puspa (wilayah fiktif)",
+    "source": "Simulasi grup komunitas",
+    "sourceUrl": "",
+    "channels": [
+      "Simulasi grup komunitas",
+      "Simulasi forum publik"
+    ],
+    "mentions": 27,
+    "status": "needs-review",
+    "hourlyCounts": [
+      0,
+      1,
+      1,
+      1,
+      2,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      11
+    ],
+    "isSynthetic": true
+  },
+  {
+    "id": "GN-DEMO-010",
+    "date": "2026-10-31T11:25:00+07:00",
+    "firstSeen": "2026-10-31T11:22:00+07:00",
+    "title": "Salinan pesan mengenai layanan air Kecamatan Puspa",
+    "claim": "Pesan menyebut layanan air bersih di Kecamatan Puspa berhenti total selama 72 jam karena gangguan jaringan. Warga diminta menampung air tanpa ada pengumuman resmi.",
+    "topic": "Layanan publik",
+    "region": "Kecamatan Puspa (wilayah fiktif)",
+    "source": "Simulasi kanal pesan",
+    "sourceUrl": "",
+    "channels": [
+      "Simulasi kanal pesan",
+      "Simulasi forum publik",
+      "Dataset latihan"
+    ],
+    "mentions": 19,
+    "status": "needs-review",
+    "hourlyCounts": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2,
+      3,
+      3,
+      4,
+      5,
+      7,
+      9
+    ],
+    "isSynthetic": true
+  }
+]

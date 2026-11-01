@@ -1,0 +1,547 @@
+{
+ "task": "topic",
+ "labels": [
+  "Bencana & keselamatan",
+  "Kesehatan publik",
+  "Layanan publik",
+  "Infrastruktur",
+  "Ekonomi & harga",
+  "Politik & pemerintahan",
+  "Keamanan & hukum",
+  "Pendidikan",
+  "Teknologi & siber",
+  "Lingkungan"
+ ],
+ "guideline": "Topik utama peristiwa/isu; bila beririsan pilih topik yang paling dominan.",
+ "items": [
+  {
+   "id": "TOP-001",
+   "text": "BNPB menyiagakan posko dan jalur evakuasi menghadapi potensi banjir bandang.",
+   "label": "Bencana & keselamatan",
+   "split": "dev"
+  },
+  {
+   "id": "TOP-002",
+   "text": "Dinas kesehatan menggelar imunisasi campak massal di puskesmas.",
+   "label": "Kesehatan publik",
+   "split": "dev"
+  },
+  {
+   "id": "TOP-003",
+   "text": "Dukcapil membuka layanan pembuatan KTP elektronik di akhir pekan.",
+   "label": "Layanan publik",
+   "split": "dev"
+  },
+  {
+   "id": "TOP-004",
+   "text": "Pembangunan jalan tol segmen baru ditargetkan rampung akhir tahun.",
+   "label": "Infrastruktur",
+   "split": "dev"
+  },
+  {
+   "id": "TOP-005",
+   "text": "Harga beras premium naik di sejumlah pasar tradisional.",
+   "label": "Ekonomi & harga",
+   "split": "dev"
+  },
+  {
+   "id": "TOP-006",
+   "text": "DPR menggelar rapat paripurna membahas rancangan undang-undang.",
+   "label": "Politik & pemerintahan",
+   "split": "dev"
+  },
+  {
+   "id": "TOP-007",
+   "text": "Polisi menangkap tersangka pencurian kendaraan bermotor di perbatasan kota.",
+   "label": "Keamanan & hukum",
+   "split": "dev"
+  },
+  {
+   "id": "TOP-008",
+   "text": "Kemendikbud mengumumkan kurikulum baru untuk jenjang sekolah dasar.",
+   "label": "Pendidikan",
+   "split": "dev"
+  },
+  {
+   "id": "TOP-009",
+   "text": "BSSN mengimbau pengguna waspada serangan phishing lewat pesan singkat.",
+   "label": "Teknologi & siber",
+   "split": "dev"
+  },
+  {
+   "id": "TOP-010",
+   "text": "Sampah plastik mencemari sungai dan menyumbat saluran air.",
+   "label": "Lingkungan",
+   "split": "dev"
+  },
+  {
+   "id": "TOP-011",
+   "text": "Gunung berapi meningkat statusnya, ribuan warga diminta mengungsi.",
+   "label": "Bencana & keselamatan",
+   "split": "dev"
+  },
+  {
+   "id": "TOP-012",
+   "text": "Kasus demam berdarah meningkat, warga diminta menguras bak air.",
+   "label": "Kesehatan publik",
+   "split": "dev"
+  },
+  {
+   "id": "TOP-013",
+   "text": "Samsat keliling melayani pembayaran pajak kendaraan di pasar.",
+   "label": "Layanan publik",
+   "split": "dev"
+  },
+  {
+   "id": "TOP-014",
+   "text": "Jembatan penghubung dua desa retak dan ditutup untuk kendaraan berat.",
+   "label": "Infrastruktur",
+   "split": "dev"
+  },
+  {
+   "id": "TOP-015",
+   "text": "Rupiah menguat tipis terhadap dolar Amerika pada perdagangan hari ini.",
+   "label": "Ekonomi & harga",
+   "split": "dev"
+  },
+  {
+   "id": "TOP-016",
+   "text": "KPU menetapkan jadwal tahapan pemilihan kepala daerah.",
+   "label": "Politik & pemerintahan",
+   "split": "dev"
+  },
+  {
+   "id": "TOP-017",
+   "text": "Pengadilan memvonis terdakwa kasus korupsi dengan hukuman delapan tahun.",
+   "label": "Keamanan & hukum",
+   "split": "dev"
+  },
+  {
+   "id": "TOP-018",
+   "text": "Pendaftaran beasiswa untuk mahasiswa berprestasi dibuka hingga akhir bulan.",
+   "label": "Pendidikan",
+   "split": "dev"
+  },
+  {
+   "id": "TOP-019",
+   "text": "Peretas membobol server dan membocorkan data jutaan pengguna aplikasi.",
+   "label": "Teknologi & siber",
+   "split": "dev"
+  },
+  {
+   "id": "TOP-020",
+   "text": "Kualitas udara memburuk akibat polusi kendaraan dan pembakaran lahan.",
+   "label": "Lingkungan",
+   "split": "dev"
+  },
+  {
+   "id": "TOP-021",
+   "text": "BMKG mengeluarkan peringatan dini cuaca ekstrem dan angin puting beliung.",
+   "label": "Bencana & keselamatan",
+   "split": "dev"
+  },
+  {
+   "id": "TOP-022",
+   "text": "Rumah sakit rujukan menambah tempat tidur untuk pasien penyakit pernapasan.",
+   "label": "Kesehatan publik",
+   "split": "dev"
+  },
+  {
+   "id": "TOP-023",
+   "text": "PDAM mengumumkan gangguan pasokan air bersih di tiga kecamatan.",
+   "label": "Layanan publik",
+   "split": "dev"
+  },
+  {
+   "id": "TOP-024",
+   "text": "Perbaikan aspal jalan nasional menyebabkan kemacetan di jalur utama.",
+   "label": "Infrastruktur",
+   "split": "dev"
+  },
+  {
+   "id": "TOP-025",
+   "text": "Pemerintah menyiapkan subsidi bagi pelaku UMKM terdampak.",
+   "label": "Ekonomi & harga",
+   "split": "dev"
+  },
+  {
+   "id": "TOP-026",
+   "text": "Presiden melantik menteri baru dalam reshuffle kabinet.",
+   "label": "Politik & pemerintahan",
+   "split": "dev"
+  },
+  {
+   "id": "TOP-027",
+   "text": "BNN menggagalkan penyelundupan narkoba jaringan internasional.",
+   "label": "Keamanan & hukum",
+   "split": "dev"
+  },
+  {
+   "id": "TOP-028",
+   "text": "Guru honorer menuntut kepastian status dan peningkatan kesejahteraan.",
+   "label": "Pendidikan",
+   "split": "dev"
+  },
+  {
+   "id": "TOP-029",
+   "text": "Pemblokiran judi online dan pinjol ilegal ditingkatkan oleh Komdigi.",
+   "label": "Teknologi & siber",
+   "split": "dev"
+  },
+  {
+   "id": "TOP-030",
+   "text": "Aktivis menolak reklamasi pantai yang mengancam ekosistem mangrove.",
+   "label": "Lingkungan",
+   "split": "dev"
+  },
+  {
+   "id": "TOP-031",
+   "text": "Tim SAR mencari korban longsor yang tertimbun material.",
+   "label": "Bencana & keselamatan",
+   "split": "test"
+  },
+  {
+   "id": "TOP-032",
+   "text": "Kemenkes mengingatkan pentingnya gizi seimbang untuk mencegah stunting.",
+   "label": "Kesehatan publik",
+   "split": "test"
+  },
+  {
+   "id": "TOP-033",
+   "text": "Pemerintah menyalurkan bansos tunai kepada keluarga penerima manfaat.",
+   "label": "Layanan publik",
+   "split": "test"
+  },
+  {
+   "id": "TOP-034",
+   "text": "Proyek kereta cepat memasuki tahap pemasangan rel.",
+   "label": "Infrastruktur",
+   "split": "test"
+  },
+  {
+   "id": "TOP-035",
+   "text": "Inflasi bulanan tercatat turun berkat stabilnya harga pangan.",
+   "label": "Ekonomi & harga",
+   "split": "test"
+  },
+  {
+   "id": "TOP-036",
+   "text": "Partai-partai membentuk koalisi menjelang pilkada serentak.",
+   "label": "Politik & pemerintahan",
+   "split": "test"
+  },
+  {
+   "id": "TOP-037",
+   "text": "Aparat mengamankan puluhan remaja yang terlibat tawuran.",
+   "label": "Keamanan & hukum",
+   "split": "test"
+  },
+  {
+   "id": "TOP-038",
+   "text": "Ujian nasional diganti asesmen yang menilai kompetensi siswa.",
+   "label": "Pendidikan",
+   "split": "test"
+  },
+  {
+   "id": "TOP-039",
+   "text": "Operator telekomunikasi memperluas jaringan 5G ke kota-kota baru.",
+   "label": "Teknologi & siber",
+   "split": "test"
+  },
+  {
+   "id": "TOP-040",
+   "text": "Deforestasi hutan menyebabkan satwa kehilangan habitat.",
+   "label": "Lingkungan",
+   "split": "test"
+  },
+  {
+   "id": "TOP-041",
+   "text": "Titik kumpul sementara disiapkan setelah gempa magnitudo 5,8 mengguncang pesisir.",
+   "label": "Bencana & keselamatan",
+   "split": "test"
+  },
+  {
+   "id": "TOP-042",
+   "text": "Puluhan warga dirawat akibat keracunan makanan pada acara hajatan.",
+   "label": "Kesehatan publik",
+   "split": "test"
+  },
+  {
+   "id": "TOP-043",
+   "text": "Kantor kelurahan menyediakan loket khusus lansia dan penyandang disabilitas.",
+   "label": "Layanan publik",
+   "split": "test"
+  },
+  {
+   "id": "TOP-044",
+   "text": "Bendungan baru akan mengairi ribuan hektare sawah.",
+   "label": "Infrastruktur",
+   "split": "test"
+  },
+  {
+   "id": "TOP-045",
+   "text": "Pedagang mengeluhkan kelangkaan minyak goreng di pasar.",
+   "label": "Ekonomi & harga",
+   "split": "test"
+  },
+  {
+   "id": "TOP-046",
+   "text": "Gubernur menyampaikan laporan pertanggungjawaban anggaran daerah.",
+   "label": "Politik & pemerintahan",
+   "split": "test"
+  },
+  {
+   "id": "TOP-047",
+   "text": "Kejaksaan memeriksa saksi dalam penyidikan dugaan penyalahgunaan dana.",
+   "label": "Keamanan & hukum",
+   "split": "test"
+  },
+  {
+   "id": "TOP-048",
+   "text": "Sekolah menerapkan sistem zonasi dalam penerimaan peserta didik baru.",
+   "label": "Pendidikan",
+   "split": "test"
+  },
+  {
+   "id": "TOP-049",
+   "text": "Ransomware melumpuhkan sistem layanan rumah sakit selama dua hari.",
+   "label": "Teknologi & siber",
+   "split": "test"
+  },
+  {
+   "id": "TOP-050",
+   "text": "Pemerintah menargetkan peningkatan energi terbarukan dalam lima tahun.",
+   "label": "Lingkungan",
+   "split": "test"
+  },
+  {
+   "id": "TOP-051",
+   "text": "Kebakaran lahan dan asap tebal menyelimuti kota sejak semalam.",
+   "label": "Bencana & keselamatan",
+   "split": "test"
+  },
+  {
+   "id": "TOP-052",
+   "text": "Peserta BPJS mengeluhkan antrean panjang di klinik rujukan.",
+   "label": "Kesehatan publik",
+   "split": "test"
+  },
+  {
+   "id": "TOP-053",
+   "text": "Jadwal pengambilan sampah diubah menjadi pagi hari.",
+   "label": "Layanan publik",
+   "split": "test"
+  },
+  {
+   "id": "TOP-054",
+   "text": "Bandara menambah landasan pacu untuk meningkatkan kapasitas penumpang.",
+   "label": "Infrastruktur",
+   "split": "test"
+  },
+  {
+   "id": "TOP-055",
+   "text": "Ekspor kopi meningkat seiring permintaan pasar Eropa.",
+   "label": "Ekonomi & harga",
+   "split": "test"
+  },
+  {
+   "id": "TOP-056",
+   "text": "Bawaslu menerima laporan dugaan pelanggaran kampanye.",
+   "label": "Politik & pemerintahan",
+   "split": "test"
+  },
+  {
+   "id": "TOP-057",
+   "text": "KPK menetapkan pejabat daerah sebagai tersangka suap proyek.",
+   "label": "Keamanan & hukum",
+   "split": "test"
+  },
+  {
+   "id": "TOP-058",
+   "text": "Universitas negeri membuka jalur mandiri untuk calon mahasiswa.",
+   "label": "Pendidikan",
+   "split": "test"
+  },
+  {
+   "id": "TOP-059",
+   "text": "Platform media sosial memperketat moderasi disinformasi menjelang pemilu.",
+   "label": "Teknologi & siber",
+   "split": "test"
+  },
+  {
+   "id": "TOP-060",
+   "text": "Limbah pabrik dibuang ke sungai, pencemaran meluas.",
+   "label": "Lingkungan",
+   "split": "test"
+  },
+  {
+   "id": "TOP-061",
+   "text": "Basarnas mengerahkan perahu karet untuk mengevakuasi warga yang terisolasi.",
+   "label": "Bencana & keselamatan",
+   "split": "test"
+  },
+  {
+   "id": "TOP-062",
+   "text": "Vaksin booster tersedia gratis di posyandu setiap Selasa.",
+   "label": "Kesehatan publik",
+   "split": "test"
+  },
+  {
+   "id": "TOP-063",
+   "text": "Pengurusan akta kelahiran kini bisa diajukan melalui aplikasi.",
+   "label": "Layanan publik",
+   "split": "test"
+  },
+  {
+   "id": "TOP-064",
+   "text": "Terminal bus antarkota direnovasi dan dilengkapi fasilitas ramah disabilitas.",
+   "label": "Infrastruktur",
+   "split": "test"
+  },
+  {
+   "id": "TOP-065",
+   "text": "Harga BBM nonsubsidi disesuaikan mulai awal bulan.",
+   "label": "Ekonomi & harga",
+   "split": "test"
+  },
+  {
+   "id": "TOP-066",
+   "text": "Mahasiswa menggelar demonstrasi menyampaikan aspirasi kepada DPRD.",
+   "label": "Politik & pemerintahan",
+   "split": "test"
+  },
+  {
+   "id": "TOP-067",
+   "text": "Polisi memperketat pengamanan menjelang perayaan malam tahun baru.",
+   "label": "Keamanan & hukum",
+   "split": "test"
+  },
+  {
+   "id": "TOP-068",
+   "text": "Ruang kelas yang rusak diperbaiki menjelang tahun ajaran baru.",
+   "label": "Pendidikan",
+   "split": "test"
+  },
+  {
+   "id": "TOP-069",
+   "text": "Kecerdasan buatan mulai dipakai untuk membantu layanan pelanggan.",
+   "label": "Teknologi & siber",
+   "split": "test"
+  },
+  {
+   "id": "TOP-070",
+   "text": "Program daur ulang sampah rumah tangga dimulai di tiga kelurahan.",
+   "label": "Lingkungan",
+   "split": "test"
+  },
+  {
+   "id": "TOP-071",
+   "text": "Tsunami kecil terdeteksi, otoritas mengimbau warga menjauhi pantai.",
+   "label": "Bencana & keselamatan",
+   "split": "test"
+  },
+  {
+   "id": "TOP-072",
+   "text": "Dokter mengimbau masyarakat waspada flu dan batuk pada musim hujan.",
+   "label": "Kesehatan publik",
+   "split": "test"
+  },
+  {
+   "id": "TOP-073",
+   "text": "PLN menginformasikan pemadaman listrik terjadwal untuk pemeliharaan jaringan.",
+   "label": "Layanan publik",
+   "split": "test"
+  },
+  {
+   "id": "TOP-074",
+   "text": "Gorong-gorong tersumbat sehingga jalan sering tergenang saat hujan.",
+   "label": "Infrastruktur",
+   "split": "test"
+  },
+  {
+   "id": "TOP-075",
+   "text": "Pengangguran terbuka menurun menurut data statistik terbaru.",
+   "label": "Ekonomi & harga",
+   "split": "test"
+  },
+  {
+   "id": "TOP-076",
+   "text": "Reformasi birokrasi diklaim mempercepat perizinan investasi.",
+   "label": "Politik & pemerintahan",
+   "split": "test"
+  },
+  {
+   "id": "TOP-077",
+   "text": "Korban penipuan investasi melapor ke kepolisian setempat.",
+   "label": "Keamanan & hukum",
+   "split": "test"
+  },
+  {
+   "id": "TOP-078",
+   "text": "Wisuda sarjana digelar secara hibrida di kampus.",
+   "label": "Pendidikan",
+   "split": "test"
+  },
+  {
+   "id": "TOP-079",
+   "text": "Pengguna diminta mengaktifkan verifikasi dua langkah untuk melindungi akun.",
+   "label": "Teknologi & siber",
+   "split": "test"
+  },
+  {
+   "id": "TOP-080",
+   "text": "Lahan gambut yang terbakar melepaskan emisi karbon dalam jumlah besar.",
+   "label": "Lingkungan",
+   "split": "test"
+  },
+  {
+   "id": "TOP-C01",
+   "text": "Antrean mengular di loket pengambilan KK, petugas bilang sistem lambat",
+   "label": "Layanan publik",
+   "split": "challenge"
+  },
+  {
+   "id": "TOP-C02",
+   "text": "Warga berebut minyak goreng di operasi pasar",
+   "label": "Ekonomi & harga",
+   "split": "challenge"
+  },
+  {
+   "id": "TOP-C03",
+   "text": "Akun resmi dinas diambil alih orang tak dikenal",
+   "label": "Teknologi & siber",
+   "split": "challenge"
+  },
+  {
+   "id": "TOP-C04",
+   "text": "Tanggul jebol saat hujan deras, ratusan rumah terendam",
+   "label": "Bencana & keselamatan",
+   "split": "challenge"
+  },
+  {
+   "id": "TOP-C05",
+   "text": "Calon kepala daerah saling sindir di debat publik",
+   "label": "Politik & pemerintahan",
+   "split": "challenge"
+  },
+  {
+   "id": "TOP-C06",
+   "text": "Jalan lintas provinsi amblas sepanjang 20 meter",
+   "label": "Infrastruktur",
+   "split": "challenge"
+  },
+  {
+   "id": "TOP-C07",
+   "text": "Kasus bayi lahir prematur meningkat di wilayah itu menurut bidan",
+   "label": "Kesehatan publik",
+   "split": "challenge"
+  },
+  {
+   "id": "TOP-C08",
+   "text": "Asap pabrik membuat warga sesak napas dan sungai berbau",
+   "label": "Lingkungan",
+   "split": "challenge"
+  }
+ ],
+ "split_note": "Split dev/test stratif per kelas (30%/70%, urutan sesuai berkas); split \"challenge\" ditulis terpisah dan tidak dipakai menyetel model."
+}

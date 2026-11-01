@@ -1,0 +1,15 @@
+{
+  "name": "garda-narasi",
+  "version": "0.2.0",
+  "description": "GARDA NARASI — platform ketahanan informasi publik dan peringatan dini narasi digital Indonesia",
+  "license": "UNLICENSED",
+  "private": true,
+  "engines": { "node": ">=22.5.0" },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning backend/server.js",
+    "dev": "SCHEDULER=false node --disable-warning=ExperimentalWarning --watch backend/server.js",
+    "test": "node --disable-warning=ExperimentalWarning --test tests/*.test.js",
+    "eval": "node engine/eval-runner.js",
+    "static": "python3 -m http.server 8080"
+  }
+}

@@ -1,0 +1,1876 @@
+{
+ "generatedAt": "2026-11-01T09:58:03.161Z",
+ "engineVersion": "0.2.0",
+ "datasetSizes": {
+  "sentiment": 75,
+  "topic": 88,
+  "epistemic": 78,
+  "pairs": 68
+ },
+ "protocol": "Item berlabel dibuat tim pengembang (bukan korpus independen). Split dev (30%) dipakai saat menyusun leksikon/ambang; split test (70%) hanya dilaporkan.",
+ "sentiment": {
+  "dev": {
+   "labels": [
+    "positive",
+    "neutral",
+    "negative"
+   ],
+   "matrix": [
+    [
+     6,
+     0,
+     0
+    ],
+    [
+     0,
+     6,
+     0
+    ],
+    [
+     0,
+     0,
+     6
+    ]
+   ],
+   "accuracy": 1,
+   "macroPrecision": 1,
+   "macroRecall": 1,
+   "macroF1": 1,
+   "weightedF1": 1,
+   "perClass": [
+    {
+     "label": "positive",
+     "precision": 1,
+     "recall": 1,
+     "f1": 1,
+     "support": 6
+    },
+    {
+     "label": "neutral",
+     "precision": 1,
+     "recall": 1,
+     "f1": 1,
+     "support": 6
+    },
+    {
+     "label": "negative",
+     "precision": 1,
+     "recall": 1,
+     "f1": 1,
+     "support": 6
+    }
+   ],
+   "total": 18,
+   "errors": []
+  },
+  "test": {
+   "labels": [
+    "positive",
+    "neutral",
+    "negative"
+   ],
+   "matrix": [
+    [
+     14,
+     0,
+     0
+    ],
+    [
+     4,
+     10,
+     0
+    ],
+    [
+     0,
+     0,
+     14
+    ]
+   ],
+   "accuracy": 0.9048,
+   "macroPrecision": 0.9259,
+   "macroRecall": 0.9048,
+   "macroF1": 0.9028,
+   "weightedF1": 0.9028,
+   "perClass": [
+    {
+     "label": "positive",
+     "precision": 0.7778,
+     "recall": 1,
+     "f1": 0.875,
+     "support": 14
+    },
+    {
+     "label": "neutral",
+     "precision": 1,
+     "recall": 0.7143,
+     "f1": 0.8333,
+     "support": 14
+    },
+    {
+     "label": "negative",
+     "precision": 1,
+     "recall": 1,
+     "f1": 1,
+     "support": 14
+    }
+   ],
+   "total": 42,
+   "errors": [
+    {
+     "id": "SEN-033",
+     "text": "Pengumuman hasil seleksi dapat dilihat melalui laman resmi.",
+     "expected": "neutral",
+     "predicted": "positive"
+    },
+    {
+     "id": "SEN-051",
+     "text": "Layanan administrasi kependudukan tersedia setiap hari kerja.",
+     "expected": "neutral",
+     "predicted": "positive"
+    },
+    {
+     "id": "SEN-054",
+     "text": "Seminar nasional tentang keamanan siber diadakan di Jakarta.",
+     "expected": "neutral",
+     "predicted": "positive"
+    },
+    {
+     "id": "SEN-060",
+     "text": "Harga bahan pokok dilaporkan stabil dibandingkan pekan lalu.",
+     "expected": "neutral",
+     "predicted": "positive"
+    }
+   ]
+  },
+  "challenge": {
+   "labels": [
+    "positive",
+    "neutral",
+    "negative"
+   ],
+   "matrix": [
+    [
+     4,
+     2,
+     1
+    ],
+    [
+     0,
+     3,
+     1
+    ],
+    [
+     1,
+     1,
+     2
+    ]
+   ],
+   "accuracy": 0.6,
+   "macroPrecision": 0.6,
+   "macroRecall": 0.6071,
+   "macroF1": 0.5889,
+   "weightedF1": 0.6045,
+   "perClass": [
+    {
+     "label": "positive",
+     "precision": 0.8,
+     "recall": 0.5714,
+     "f1": 0.6667,
+     "support": 7
+    },
+    {
+     "label": "neutral",
+     "precision": 0.5,
+     "recall": 0.75,
+     "f1": 0.6,
+     "support": 4
+    },
+    {
+     "label": "negative",
+     "precision": 0.5,
+     "recall": 0.5,
+     "f1": 0.5,
+     "support": 4
+    }
+   ],
+   "total": 15,
+   "errors": [
+    {
+     "id": "SEN-C01",
+     "text": "gila sih pelayanannya, nunggu 4 jam cuma buat tanda tangan doang",
+     "expected": "negative",
+     "predicted": "neutral"
+    },
+    {
+     "id": "SEN-C02",
+     "text": "lumayan lah jalannya udah mulus sekarang",
+     "expected": "positive",
+     "predicted": "neutral"
+    },
+    {
+     "id": "SEN-C10",
+     "text": "Katanya sih bakal ada perbaikan, tapi warga sudah capek menunggu",
+     "expected": "negative",
+     "predicted": "positive"
+    },
+    {
+     "id": "SEN-C11",
+     "text": "Seneng banget akhirnya air ngalir lagi",
+     "expected": "positive",
+     "predicted": "neutral"
+    },
+    {
+     "id": "SEN-C14",
+     "text": "jalan yang dulu hancur kini sudah mulus berkat perbaikan",
+     "expected": "positive",
+     "predicted": "negative"
+    },
+    {
+     "id": "SEN-C15",
+     "text": "Rapat evaluasi digelar untuk membahas banjir bulan lalu",
+     "expected": "neutral",
+     "predicted": "negative"
+    }
+   ]
+  },
+  "all": {
+   "labels": [
+    "positive",
+    "neutral",
+    "negative"
+   ],
+   "matrix": [
+    [
+     20,
+     0,
+     0
+    ],
+    [
+     4,
+     16,
+     0
+    ],
+    [
+     0,
+     0,
+     20
+    ]
+   ],
+   "accuracy": 0.9333,
+   "macroPrecision": 0.9444,
+   "macroRecall": 0.9333,
+   "macroF1": 0.9327,
+   "weightedF1": 0.9327,
+   "perClass": [
+    {
+     "label": "positive",
+     "precision": 0.8333,
+     "recall": 1,
+     "f1": 0.9091,
+     "support": 20
+    },
+    {
+     "label": "neutral",
+     "precision": 1,
+     "recall": 0.8,
+     "f1": 0.8889,
+     "support": 20
+    },
+    {
+     "label": "negative",
+     "precision": 1,
+     "recall": 1,
+     "f1": 1,
+     "support": 20
+    }
+   ],
+   "total": 60,
+   "errors": [
+    {
+     "id": "SEN-033",
+     "text": "Pengumuman hasil seleksi dapat dilihat melalui laman resmi.",
+     "expected": "neutral",
+     "predicted": "positive"
+    },
+    {
+     "id": "SEN-051",
+     "text": "Layanan administrasi kependudukan tersedia setiap hari kerja.",
+     "expected": "neutral",
+     "predicted": "positive"
+    },
+    {
+     "id": "SEN-054",
+     "text": "Seminar nasional tentang keamanan siber diadakan di Jakarta.",
+     "expected": "neutral",
+     "predicted": "positive"
+    },
+    {
+     "id": "SEN-060",
+     "text": "Harga bahan pokok dilaporkan stabil dibandingkan pekan lalu.",
+     "expected": "neutral",
+     "predicted": "positive"
+    }
+   ]
+  }
+ },
+ "topic": {
+  "dev": {
+   "labels": [
+    "Bencana & keselamatan",
+    "Kesehatan publik",
+    "Layanan publik",
+    "Infrastruktur",
+    "Ekonomi & harga",
+    "Politik & pemerintahan",
+    "Keamanan & hukum",
+    "Pendidikan",
+    "Teknologi & siber",
+    "Lingkungan"
+   ],
+   "matrix": [
+    [
+     3,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     3,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     3,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     3,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     1,
+     0,
+     2,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     3,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     2,
+     0,
+     1,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     3,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     3,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     3
+    ]
+   ],
+   "accuracy": 0.9333,
+   "macroPrecision": 0.95,
+   "macroRecall": 0.9333,
+   "macroF1": 0.9314,
+   "weightedF1": 0.9314,
+   "perClass": [
+    {
+     "label": "Bencana & keselamatan",
+     "precision": 1,
+     "recall": 1,
+     "f1": 1,
+     "support": 3
+    },
+    {
+     "label": "Kesehatan publik",
+     "precision": 1,
+     "recall": 1,
+     "f1": 1,
+     "support": 3
+    },
+    {
+     "label": "Layanan publik",
+     "precision": 0.75,
+     "recall": 1,
+     "f1": 0.8571,
+     "support": 3
+    },
+    {
+     "label": "Infrastruktur",
+     "precision": 1,
+     "recall": 1,
+     "f1": 1,
+     "support": 3
+    },
+    {
+     "label": "Ekonomi & harga",
+     "precision": 1,
+     "recall": 0.6667,
+     "f1": 0.8,
+     "support": 3
+    },
+    {
+     "label": "Politik & pemerintahan",
+     "precision": 1,
+     "recall": 1,
+     "f1": 1,
+     "support": 3
+    },
+    {
+     "label": "Keamanan & hukum",
+     "precision": 1,
+     "recall": 0.6667,
+     "f1": 0.8,
+     "support": 3
+    },
+    {
+     "label": "Pendidikan",
+     "precision": 1,
+     "recall": 1,
+     "f1": 1,
+     "support": 3
+    },
+    {
+     "label": "Teknologi & siber",
+     "precision": 0.75,
+     "recall": 1,
+     "f1": 0.8571,
+     "support": 3
+    },
+    {
+     "label": "Lingkungan",
+     "precision": 1,
+     "recall": 1,
+     "f1": 1,
+     "support": 3
+    }
+   ],
+   "total": 30,
+   "errors": [
+    {
+     "id": "TOP-025",
+     "text": "Pemerintah menyiapkan subsidi bagi pelaku UMKM terdampak.",
+     "expected": "Ekonomi & harga",
+     "predicted": "Layanan publik"
+    },
+    {
+     "id": "TOP-027",
+     "text": "BNN menggagalkan penyelundupan narkoba jaringan internasional.",
+     "expected": "Keamanan & hukum",
+     "predicted": "Teknologi & siber"
+    }
+   ]
+  },
+  "test": {
+   "labels": [
+    "Bencana & keselamatan",
+    "Kesehatan publik",
+    "Layanan publik",
+    "Infrastruktur",
+    "Ekonomi & harga",
+    "Politik & pemerintahan",
+    "Keamanan & hukum",
+    "Pendidikan",
+    "Teknologi & siber",
+    "Lingkungan",
+    "Informasi umum"
+   ],
+   "matrix": [
+    [
+     5,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     5,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     5,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     5,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     5,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     5,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     4,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     1,
+     0,
+     0,
+     0,
+     4,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     3,
+     0,
+     1
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     5,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   ],
+   "accuracy": 0.92,
+   "macroPrecision": 0.95,
+   "macroRecall": 0.92,
+   "macroF1": 0.9255,
+   "weightedF1": 0.9255,
+   "perClass": [
+    {
+     "label": "Bencana & keselamatan",
+     "precision": 0.8333,
+     "recall": 1,
+     "f1": 0.9091,
+     "support": 5
+    },
+    {
+     "label": "Kesehatan publik",
+     "precision": 0.8333,
+     "recall": 1,
+     "f1": 0.9091,
+     "support": 5
+    },
+    {
+     "label": "Layanan publik",
+     "precision": 1,
+     "recall": 1,
+     "f1": 1,
+     "support": 5
+    },
+    {
+     "label": "Infrastruktur",
+     "precision": 0.8333,
+     "recall": 1,
+     "f1": 0.9091,
+     "support": 5
+    },
+    {
+     "label": "Ekonomi & harga",
+     "precision": 1,
+     "recall": 1,
+     "f1": 1,
+     "support": 5
+    },
+    {
+     "label": "Politik & pemerintahan",
+     "precision": 1,
+     "recall": 1,
+     "f1": 1,
+     "support": 5
+    },
+    {
+     "label": "Keamanan & hukum",
+     "precision": 1,
+     "recall": 0.8,
+     "f1": 0.8889,
+     "support": 5
+    },
+    {
+     "label": "Pendidikan",
+     "precision": 1,
+     "recall": 0.8,
+     "f1": 0.8889,
+     "support": 5
+    },
+    {
+     "label": "Teknologi & siber",
+     "precision": 1,
+     "recall": 0.6,
+     "f1": 0.75,
+     "support": 5
+    },
+    {
+     "label": "Lingkungan",
+     "precision": 1,
+     "recall": 1,
+     "f1": 1,
+     "support": 5
+    },
+    {
+     "label": "Informasi umum",
+     "precision": 0,
+     "recall": 0,
+     "f1": 0,
+     "support": 0
+    }
+   ],
+   "total": 50,
+   "errors": [
+    {
+     "id": "TOP-049",
+     "text": "Ransomware melumpuhkan sistem layanan rumah sakit selama dua hari.",
+     "expected": "Teknologi & siber",
+     "predicted": "Kesehatan publik"
+    },
+    {
+     "id": "TOP-068",
+     "text": "Ruang kelas yang rusak diperbaiki menjelang tahun ajaran baru.",
+     "expected": "Pendidikan",
+     "predicted": "Infrastruktur"
+    },
+    {
+     "id": "TOP-077",
+     "text": "Korban penipuan investasi melapor ke kepolisian setempat.",
+     "expected": "Keamanan & hukum",
+     "predicted": "Bencana & keselamatan"
+    },
+    {
+     "id": "TOP-079",
+     "text": "Pengguna diminta mengaktifkan verifikasi dua langkah untuk melindungi akun.",
+     "expected": "Teknologi & siber",
+     "predicted": "Informasi umum"
+    }
+   ]
+  },
+  "challenge": {
+   "labels": [
+    "Bencana & keselamatan",
+    "Kesehatan publik",
+    "Layanan publik",
+    "Infrastruktur",
+    "Ekonomi & harga",
+    "Politik & pemerintahan",
+    "Keamanan & hukum",
+    "Pendidikan",
+    "Teknologi & siber",
+    "Lingkungan",
+    "Informasi umum"
+   ],
+   "matrix": [
+    [
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   ],
+   "accuracy": 0.375,
+   "macroPrecision": 0.375,
+   "macroRecall": 0.375,
+   "macroF1": 0.375,
+   "weightedF1": 0.375,
+   "perClass": [
+    {
+     "label": "Bencana & keselamatan",
+     "precision": 0,
+     "recall": 0,
+     "f1": 0,
+     "support": 1
+    },
+    {
+     "label": "Kesehatan publik",
+     "precision": 0,
+     "recall": 0,
+     "f1": 0,
+     "support": 1
+    },
+    {
+     "label": "Layanan publik",
+     "precision": 1,
+     "recall": 1,
+     "f1": 1,
+     "support": 1
+    },
+    {
+     "label": "Infrastruktur",
+     "precision": 1,
+     "recall": 1,
+     "f1": 1,
+     "support": 1
+    },
+    {
+     "label": "Ekonomi & harga",
+     "precision": 1,
+     "recall": 1,
+     "f1": 1,
+     "support": 1
+    },
+    {
+     "label": "Politik & pemerintahan",
+     "precision": 0,
+     "recall": 0,
+     "f1": 0,
+     "support": 1
+    },
+    {
+     "label": "Keamanan & hukum",
+     "precision": 0,
+     "recall": 0,
+     "f1": 0,
+     "support": 0
+    },
+    {
+     "label": "Pendidikan",
+     "precision": 0,
+     "recall": 0,
+     "f1": 0,
+     "support": 0
+    },
+    {
+     "label": "Teknologi & siber",
+     "precision": 0,
+     "recall": 0,
+     "f1": 0,
+     "support": 1
+    },
+    {
+     "label": "Lingkungan",
+     "precision": 0,
+     "recall": 0,
+     "f1": 0,
+     "support": 1
+    },
+    {
+     "label": "Informasi umum",
+     "precision": 0,
+     "recall": 0,
+     "f1": 0,
+     "support": 0
+    }
+   ],
+   "total": 8,
+   "errors": [
+    {
+     "id": "TOP-C03",
+     "text": "Akun resmi dinas diambil alih orang tak dikenal",
+     "expected": "Teknologi & siber",
+     "predicted": "Informasi umum"
+    },
+    {
+     "id": "TOP-C04",
+     "text": "Tanggul jebol saat hujan deras, ratusan rumah terendam",
+     "expected": "Bencana & keselamatan",
+     "predicted": "Kesehatan publik"
+    },
+    {
+     "id": "TOP-C05",
+     "text": "Calon kepala daerah saling sindir di debat publik",
+     "expected": "Politik & pemerintahan",
+     "predicted": "Informasi umum"
+    },
+    {
+     "id": "TOP-C07",
+     "text": "Kasus bayi lahir prematur meningkat di wilayah itu menurut bidan",
+     "expected": "Kesehatan publik",
+     "predicted": "Informasi umum"
+    },
+    {
+     "id": "TOP-C08",
+     "text": "Asap pabrik membuat warga sesak napas dan sungai berbau",
+     "expected": "Lingkungan",
+     "predicted": "Bencana & keselamatan"
+    }
+   ]
+  },
+  "all": {
+   "labels": [
+    "Bencana & keselamatan",
+    "Kesehatan publik",
+    "Layanan publik",
+    "Infrastruktur",
+    "Ekonomi & harga",
+    "Politik & pemerintahan",
+    "Keamanan & hukum",
+    "Pendidikan",
+    "Teknologi & siber",
+    "Lingkungan",
+    "Informasi umum"
+   ],
+   "matrix": [
+    [
+     8,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     8,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     8,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     8,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     1,
+     0,
+     7,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     8,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     6,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     1,
+     0,
+     0,
+     0,
+     7,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     6,
+     0,
+     1
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     8,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   ],
+   "accuracy": 0.925,
+   "macroPrecision": 0.9413,
+   "macroRecall": 0.925,
+   "macroF1": 0.9289,
+   "weightedF1": 0.9289,
+   "perClass": [
+    {
+     "label": "Bencana & keselamatan",
+     "precision": 0.8889,
+     "recall": 1,
+     "f1": 0.9412,
+     "support": 8
+    },
+    {
+     "label": "Kesehatan publik",
+     "precision": 0.8889,
+     "recall": 1,
+     "f1": 0.9412,
+     "support": 8
+    },
+    {
+     "label": "Layanan publik",
+     "precision": 0.8889,
+     "recall": 1,
+     "f1": 0.9412,
+     "support": 8
+    },
+    {
+     "label": "Infrastruktur",
+     "precision": 0.8889,
+     "recall": 1,
+     "f1": 0.9412,
+     "support": 8
+    },
+    {
+     "label": "Ekonomi & harga",
+     "precision": 1,
+     "recall": 0.875,
+     "f1": 0.9333,
+     "support": 8
+    },
+    {
+     "label": "Politik & pemerintahan",
+     "precision": 1,
+     "recall": 1,
+     "f1": 1,
+     "support": 8
+    },
+    {
+     "label": "Keamanan & hukum",
+     "precision": 1,
+     "recall": 0.75,
+     "f1": 0.8571,
+     "support": 8
+    },
+    {
+     "label": "Pendidikan",
+     "precision": 1,
+     "recall": 0.875,
+     "f1": 0.9333,
+     "support": 8
+    },
+    {
+     "label": "Teknologi & siber",
+     "precision": 0.8571,
+     "recall": 0.75,
+     "f1": 0.8,
+     "support": 8
+    },
+    {
+     "label": "Lingkungan",
+     "precision": 1,
+     "recall": 1,
+     "f1": 1,
+     "support": 8
+    },
+    {
+     "label": "Informasi umum",
+     "precision": 0,
+     "recall": 0,
+     "f1": 0,
+     "support": 0
+    }
+   ],
+   "total": 80,
+   "errors": [
+    {
+     "id": "TOP-025",
+     "text": "Pemerintah menyiapkan subsidi bagi pelaku UMKM terdampak.",
+     "expected": "Ekonomi & harga",
+     "predicted": "Layanan publik"
+    },
+    {
+     "id": "TOP-027",
+     "text": "BNN menggagalkan penyelundupan narkoba jaringan internasional.",
+     "expected": "Keamanan & hukum",
+     "predicted": "Teknologi & siber"
+    },
+    {
+     "id": "TOP-049",
+     "text": "Ransomware melumpuhkan sistem layanan rumah sakit selama dua hari.",
+     "expected": "Teknologi & siber",
+     "predicted": "Kesehatan publik"
+    },
+    {
+     "id": "TOP-068",
+     "text": "Ruang kelas yang rusak diperbaiki menjelang tahun ajaran baru.",
+     "expected": "Pendidikan",
+     "predicted": "Infrastruktur"
+    },
+    {
+     "id": "TOP-077",
+     "text": "Korban penipuan investasi melapor ke kepolisian setempat.",
+     "expected": "Keamanan & hukum",
+     "predicted": "Bencana & keselamatan"
+    },
+    {
+     "id": "TOP-079",
+     "text": "Pengguna diminta mengaktifkan verifikasi dua langkah untuk melindungi akun.",
+     "expected": "Teknologi & siber",
+     "predicted": "Informasi umum"
+    }
+   ]
+  }
+ },
+ "epistemic": {
+  "dev": {
+   "labels": [
+    "unverified",
+    "speculation",
+    "opinion",
+    "factual"
+   ],
+   "matrix": [
+    [
+     5,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     5,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     5,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     5
+    ]
+   ],
+   "accuracy": 1,
+   "macroPrecision": 1,
+   "macroRecall": 1,
+   "macroF1": 1,
+   "weightedF1": 1,
+   "perClass": [
+    {
+     "label": "unverified",
+     "precision": 1,
+     "recall": 1,
+     "f1": 1,
+     "support": 5
+    },
+    {
+     "label": "speculation",
+     "precision": 1,
+     "recall": 1,
+     "f1": 1,
+     "support": 5
+    },
+    {
+     "label": "opinion",
+     "precision": 1,
+     "recall": 1,
+     "f1": 1,
+     "support": 5
+    },
+    {
+     "label": "factual",
+     "precision": 1,
+     "recall": 1,
+     "f1": 1,
+     "support": 5
+    }
+   ],
+   "total": 20,
+   "errors": []
+  },
+  "test": {
+   "labels": [
+    "unverified",
+    "speculation",
+    "opinion",
+    "factual"
+   ],
+   "matrix": [
+    [
+     11,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     11,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     11,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     11
+    ]
+   ],
+   "accuracy": 1,
+   "macroPrecision": 1,
+   "macroRecall": 1,
+   "macroF1": 1,
+   "weightedF1": 1,
+   "perClass": [
+    {
+     "label": "unverified",
+     "precision": 1,
+     "recall": 1,
+     "f1": 1,
+     "support": 11
+    },
+    {
+     "label": "speculation",
+     "precision": 1,
+     "recall": 1,
+     "f1": 1,
+     "support": 11
+    },
+    {
+     "label": "opinion",
+     "precision": 1,
+     "recall": 1,
+     "f1": 1,
+     "support": 11
+    },
+    {
+     "label": "factual",
+     "precision": 1,
+     "recall": 1,
+     "f1": 1,
+     "support": 11
+    }
+   ],
+   "total": 44,
+   "errors": []
+  },
+  "challenge": {
+   "labels": [
+    "unverified",
+    "speculation",
+    "opinion",
+    "factual"
+   ],
+   "matrix": [
+    [
+     0,
+     0,
+     0,
+     4
+    ],
+    [
+     0,
+     3,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     2,
+     1
+    ],
+    [
+     0,
+     0,
+     0,
+     4
+    ]
+   ],
+   "accuracy": 0.6429,
+   "macroPrecision": 0.6111,
+   "macroRecall": 0.6667,
+   "macroF1": 0.6039,
+   "weightedF1": 0.5615,
+   "perClass": [
+    {
+     "label": "unverified",
+     "precision": 0,
+     "recall": 0,
+     "f1": 0,
+     "support": 4
+    },
+    {
+     "label": "speculation",
+     "precision": 1,
+     "recall": 1,
+     "f1": 1,
+     "support": 3
+    },
+    {
+     "label": "opinion",
+     "precision": 1,
+     "recall": 0.6667,
+     "f1": 0.8,
+     "support": 3
+    },
+    {
+     "label": "factual",
+     "precision": 0.4444,
+     "recall": 1,
+     "f1": 0.6154,
+     "support": 4
+    }
+   ],
+   "total": 14,
+   "errors": [
+    {
+     "id": "EPI-C01",
+     "text": "denger-denger besok bank pada tutup, gatau bener apa nggak",
+     "expected": "unverified",
+     "predicted": "factual"
+    },
+    {
+     "id": "EPI-C02",
+     "text": "ada isu pemadaman besar nih, belum ada pengumuman resmi dari PLN",
+     "expected": "unverified",
+     "predicted": "factual"
+    },
+    {
+     "id": "EPI-C03",
+     "text": "WA grup RT lagi ramai bahas air mau diputus, sumbernya tidak jelas",
+     "expected": "unverified",
+     "predicted": "factual"
+    },
+    {
+     "id": "EPI-C04",
+     "text": "Entah benar atau tidak, foto ini lagi ramai dibagikan",
+     "expected": "unverified",
+     "predicted": "factual"
+    },
+    {
+     "id": "EPI-C08",
+     "text": "parah banget kerjaan dinasnya, tidak ada yang benar",
+     "expected": "opinion",
+     "predicted": "factual"
+    }
+   ]
+  },
+  "all": {
+   "labels": [
+    "unverified",
+    "speculation",
+    "opinion",
+    "factual"
+   ],
+   "matrix": [
+    [
+     16,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     16,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     16,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     16
+    ]
+   ],
+   "accuracy": 1,
+   "macroPrecision": 1,
+   "macroRecall": 1,
+   "macroF1": 1,
+   "weightedF1": 1,
+   "perClass": [
+    {
+     "label": "unverified",
+     "precision": 1,
+     "recall": 1,
+     "f1": 1,
+     "support": 16
+    },
+    {
+     "label": "speculation",
+     "precision": 1,
+     "recall": 1,
+     "f1": 1,
+     "support": 16
+    },
+    {
+     "label": "opinion",
+     "precision": 1,
+     "recall": 1,
+     "f1": 1,
+     "support": 16
+    },
+    {
+     "label": "factual",
+     "precision": 1,
+     "recall": 1,
+     "f1": 1,
+     "support": 16
+    }
+   ],
+   "total": 64,
+   "errors": []
+  }
+ },
+ "pairs": [
+  {
+   "method": "Jaccard token (baseline 0.1.1)",
+   "devBest": {
+    "threshold": 0.19000000000000003,
+    "tp": 8,
+    "fp": 1,
+    "fn": 1,
+    "tn": 8,
+    "precision": 0.8889,
+    "recall": 0.8889,
+    "f1": 0.8889,
+    "accuracy": 0.8889
+   },
+   "test": {
+    "threshold": 0.19000000000000003,
+    "tp": 20,
+    "fp": 9,
+    "fn": 1,
+    "tn": 12,
+    "precision": 0.6897,
+    "recall": 0.9524,
+    "f1": 0.8,
+    "accuracy": 0.7619
+   },
+   "challenge": {
+    "threshold": 0.19000000000000003,
+    "tp": 5,
+    "fp": 3,
+    "fn": 0,
+    "tn": 0,
+    "precision": 0.625,
+    "recall": 1,
+    "f1": 0.7692,
+    "accuracy": 0.625
+   }
+  },
+  {
+   "method": "TF-IDF cosine (unigram)",
+   "devBest": {
+    "threshold": 0.22000000000000006,
+    "tp": 9,
+    "fp": 3,
+    "fn": 0,
+    "tn": 6,
+    "precision": 0.75,
+    "recall": 1,
+    "f1": 0.8571,
+    "accuracy": 0.8333
+   },
+   "test": {
+    "threshold": 0.22000000000000006,
+    "tp": 20,
+    "fp": 9,
+    "fn": 1,
+    "tn": 12,
+    "precision": 0.6897,
+    "recall": 0.9524,
+    "f1": 0.8,
+    "accuracy": 0.7619
+   },
+   "challenge": {
+    "threshold": 0.22000000000000006,
+    "tp": 5,
+    "fp": 3,
+    "fn": 0,
+    "tn": 0,
+    "precision": 0.625,
+    "recall": 1,
+    "f1": 0.7692,
+    "accuracy": 0.625
+   }
+  },
+  {
+   "method": "TF-IDF cosine + stemming",
+   "devBest": {
+    "threshold": 0.26000000000000006,
+    "tp": 9,
+    "fp": 0,
+    "fn": 0,
+    "tn": 9,
+    "precision": 1,
+    "recall": 1,
+    "f1": 1,
+    "accuracy": 1
+   },
+   "test": {
+    "threshold": 0.26000000000000006,
+    "tp": 21,
+    "fp": 7,
+    "fn": 0,
+    "tn": 14,
+    "precision": 0.75,
+    "recall": 1,
+    "f1": 0.8571,
+    "accuracy": 0.8333
+   },
+   "challenge": {
+    "threshold": 0.26000000000000006,
+    "tp": 5,
+    "fp": 3,
+    "fn": 0,
+    "tn": 0,
+    "precision": 0.625,
+    "recall": 1,
+    "f1": 0.7692,
+    "accuracy": 0.625
+   }
+  },
+  {
+   "method": "TF-IDF cosine + stemming + bigram",
+   "devBest": {
+    "threshold": 0.18000000000000002,
+    "tp": 9,
+    "fp": 1,
+    "fn": 0,
+    "tn": 8,
+    "precision": 0.9,
+    "recall": 1,
+    "f1": 0.9474,
+    "accuracy": 0.9444
+   },
+   "test": {
+    "threshold": 0.18000000000000002,
+    "tp": 21,
+    "fp": 8,
+    "fn": 0,
+    "tn": 13,
+    "precision": 0.7241,
+    "recall": 1,
+    "f1": 0.84,
+    "accuracy": 0.8095
+   },
+   "challenge": {
+    "threshold": 0.18000000000000002,
+    "tp": 5,
+    "fp": 3,
+    "fn": 0,
+    "tn": 0,
+    "precision": 0.625,
+    "recall": 1,
+    "f1": 0.7692,
+    "accuracy": 0.625
+   }
+  },
+  {
+   "method": "TF-IDF cosine + stemming + konsep (dipakai engine)",
+   "devBest": {
+    "threshold": 0.26000000000000006,
+    "tp": 9,
+    "fp": 0,
+    "fn": 0,
+    "tn": 9,
+    "precision": 1,
+    "recall": 1,
+    "f1": 1,
+    "accuracy": 1
+   },
+   "test": {
+    "threshold": 0.26000000000000006,
+    "tp": 21,
+    "fp": 7,
+    "fn": 0,
+    "tn": 14,
+    "precision": 0.75,
+    "recall": 1,
+    "f1": 0.8571,
+    "accuracy": 0.8333
+   },
+   "challenge": {
+    "threshold": 0.26000000000000006,
+    "tp": 5,
+    "fp": 3,
+    "fn": 0,
+    "tn": 0,
+    "precision": 0.625,
+    "recall": 1,
+    "f1": 0.7692,
+    "accuracy": 0.625
+   }
+  }
+ ]
+}

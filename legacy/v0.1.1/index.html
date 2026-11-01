@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1220">
+  <meta name="description" content="GARDA NARASI — platform analisis narasi dan peringatan dini informasi publik berbasis bukti.">
+  <title>GARDA NARASI | Public Information Resilience</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%2339b7a4' d='M50 4 88 18v29c0 24-15 40-38 49C27 87 12 71 12 47V18z'/%3E%3Cpath fill='%230b1220' d='M50 18 75 27v20c0 16-9 27-25 34-16-7-25-18-25-34V27z'/%3E%3Cpath fill='none' stroke='%23e8f5f2' stroke-width='5' stroke-linecap='round' stroke-linejoin='round' d='m34 49 11 11 22-24'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/engine.js"></script>
+  <script defer src="assets/js/charts.js"></script>
+  <script defer src="assets/js/app.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#overview" aria-label="GARDA NARASI beranda">
+        <span class="brand-mark"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 3 42 10v14c0 12-7 19-18 22C13 43 6 36 6 24V10L24 3Z"/><path d="m15 24 6 6 13-14"/></svg></span>
+        <span class="brand-copy"><strong>GARDA <em>NARASI</em></strong><small>INFORMATION RESILIENCE</small></span>
+      </a>
+
+      <div class="workspace-label">WORKSPACE</div>
+      <nav class="main-nav" aria-label="Navigasi utama">
+        <button class="nav-item active" data-view="overview"><span class="nav-icon">◫</span><span>Overview</span><kbd>01</kbd></button>
+        <button class="nav-item" data-view="narratives"><span class="nav-icon">◎</span><span>Narrative Intelligence</span><kbd>02</kbd></button>
+        <button class="nav-item" data-view="sentiment"><span class="nav-icon">◉</span><span>Sentiment Analysis</span><kbd>03</kbd></button>
+        <button class="nav-item" data-view="network"><span class="nav-icon">⌘</span><span>Narrative Network</span><kbd>04</kbd></button>
+        <button class="nav-item" data-view="verification"><span class="nav-icon">✓</span><span>Claim Verification</span><kbd>05</kbd></button>
+        <button class="nav-item" data-view="early-warning"><span class="nav-icon">⌁</span><span>Early Warning</span><kbd>06</kbd></button>
+        <button class="nav-item" data-view="reports"><span class="nav-icon">▤</span><span>Reports & Data</span><kbd>07</kbd></button>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="privacy-card">
+          <span class="privacy-icon">◈</span>
+          <div><strong>Local-first mode</strong><small>Data tersimpan di browser ini</small></div>
+          <span class="status-dot"></span>
+        </div>
+        <div class="profile-row">
+          <div class="avatar">GN</div>
+          <div class="profile-copy"><strong>Analyst Workspace</strong><small>Demo environment</small></div>
+          <span class="more">•••</span>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <div class="topbar-left">
+          <button class="icon-button mobile-menu" id="mobileMenu" aria-label="Buka navigasi">☰</button>
+          <div class="breadcrumb"><span>Workspace</span><b>/</b><strong id="crumbCurrent">Overview</strong></div>
+        </div>
+        <div class="topbar-right">
+          <span class="live-indicator"><i></i> LOCAL ANALYSIS</span>
+          <span class="topbar-divider"></span>
+          <button class="icon-button" id="helpButton" aria-label="Tentang aplikasi">?</button>
+          <div class="top-date" id="topDate">31 OKTOBER 2026</div>
+        </div>
+      </header>
+
+      <div class="content-wrap">
+        <div class="demo-banner"><span class="banner-dot"></span><strong>LINGKUNGAN DEMO</strong><span>Dataset yang tersedia adalah data sintetis untuk pengujian — bukan laporan kejadian nyata.</span><button id="bannerInfo">Pelajari batasan ↗</button></div>
+
+        <!-- OVERVIEW -->
+        <section class="view active" id="view-overview">
+          <div class="page-heading">
+            <div><p class="eyebrow">PUBLIC INFORMATION RESILIENCE</p><h1>National Insight <span>Dashboard</span></h1><p class="page-subtitle">Pantau dinamika narasi, pahami konteks, dan prioritaskan verifikasi berbasis bukti.</p></div>
+            <div class="heading-actions"><button class="button button-secondary" id="exportQuick">↓ Export ringkasan</button><button class="button button-primary" data-open-add>＋ Tambah klaim</button></div>
+          </div>
+
+          <div class="kpi-grid">
+            <article class="kpi-card"><div class="kpi-top"><span>Total klaim</span><span class="kpi-icon mint">◎</span></div><div class="kpi-value" id="kpiClaims">—</div><div class="kpi-foot"><span class="neutral-chip">Dataset aktif</span><span>seluruh status</span></div></article>
+            <article class="kpi-card"><div class="kpi-top"><span>Perlu verifikasi</span><span class="kpi-icon amber">⌕</span></div><div class="kpi-value" id="kpiPending">—</div><div class="kpi-foot"><span class="warning-chip">Perlu ditinjau</span><span id="pendingPct">—</span></div></article>
+            <article class="kpi-card"><div class="kpi-top"><span>Isu prioritas</span><span class="kpi-icon red">⌁</span></div><div class="kpi-value" id="kpiPriority">—</div><div class="kpi-foot"><span class="danger-chip">Skor urgensi tinggi</span><span>indikasi, bukan vonis</span></div></article>
+            <article class="kpi-card"><div class="kpi-top"><span>Sudah diverifikasi</span><span class="kpi-icon blue">✓</span></div><div class="kpi-value" id="kpiVerified">—</div><div class="kpi-foot"><span class="success-chip">Ada keputusan</span><span id="verifiedPct">—</span></div></article>
+          </div>
+
+          <div class="dashboard-grid">
+            <article class="panel trend-panel">
+              <div class="panel-heading"><div><h2>Volume narasi</h2><p>Jumlah catatan pembahasan per tanggal</p></div><div class="chart-legend"><span><i class="legend-dot teal"></i> Jumlah catatan</span><span class="small-select-label">7 hari terakhir</span></div></div>
+              <div class="chart-wrap"><canvas id="volumeChart" aria-label="Grafik volume narasi tujuh hari terakhir"></canvas><div class="chart-empty hidden" id="volumeEmpty">Belum ada data untuk divisualisasikan.</div></div>
+            </article>
+            <article class="panel sentiment-panel">
+              <div class="panel-heading"><div><h2>Indikasi sentimen</h2><p>Analisis leksikon sederhana</p></div><span class="info-pill">INDIKATIF</span></div>
+              <div class="sentiment-summary"><div class="donut" id="sentimentDonut"><div><strong id="sentimentTotal">0</strong><small>catatan</small></div></div><div class="sentiment-legend" id="sentimentLegend"></div></div>
+              <div class="method-note">Sentimen mengukur kecenderungan kata dalam data, bukan kebenaran klaim atau sikap suatu kelompok.</div>
+            </article>
+          </div>
+
+          <div class="lower-grid">
+            <article class="panel priority-panel">
+              <div class="panel-heading"><div><h2>Narasi perlu perhatian</h2><p>Diurutkan menurut skor urgensi analitis</p></div><button class="text-button" data-go="early-warning">Lihat semua ↗</button></div>
+              <div class="table-wrap"><table class="data-table"><thead><tr><th>NARASI / TOPIK</th><th>VOLUME</th><th>STATUS</th><th>URGENSI</th><th></th></tr></thead><tbody id="priorityTable"></tbody></table></div>
+              <div class="empty-state hidden" id="priorityEmpty">Belum ada klaim. Tambahkan data atau muat dataset demo.</div>
+            </article>
+            <article class="panel activity-panel">
+              <div class="panel-heading"><div><h2>Aktivitas terbaru</h2><p>Perubahan pada workspace</p></div><span class="activity-count" id="activityCount">0</span></div>
+              <div class="activity-list" id="activityList"></div>
+            </article>
+          </div>
+          <div class="footer-note"><span>GARDA NARASI · PROTOTIPE HACKATHON</span><span>Analisis berbasis bukti • Human-in-the-loop • Local-first</span></div>
+        </section>
+
+        <!-- NARRATIVES -->
+        <section class="view" id="view-narratives">
+          <div class="page-heading"><div><p class="eyebrow">MODULE 02 / DISCOVERY</p><h1>Narrative <span>Intelligence</span></h1><p class="page-subtitle">Jelajahi kelompok klaim berdasarkan topik, kemiripan teks, dan pola aktivitas.</p></div><div class="heading-actions"><button class="button button-secondary" id="importNarratives">↑ Import data</button><button class="button button-primary" data-open-add>＋ Tambah klaim</button></div></div>
+          <div class="filter-bar"><div class="search-field"><span>⌕</span><input id="narrativeSearch" type="search" placeholder="Cari kata kunci, klaim, wilayah, atau sumber..."></div><select id="topicFilter" aria-label="Filter topik"><option value="all">Semua topik</option></select><select id="narrativeStatusFilter" aria-label="Filter status"><option value="all">Semua status</option><option value="needs-review">Perlu verifikasi</option><option value="verified">Terverifikasi</option><option value="false">Tidak benar</option><option value="misleading">Menyesatkan</option><option value="context-needed">Perlu konteks</option></select></div>
+          <div class="narrative-grid" id="narrativeGrid"></div>
+          <div class="empty-state hidden" id="narrativeEmpty">Tidak ada klaim yang cocok dengan filter.</div>
+        </section>
+
+        <!-- SENTIMENT ANALYSIS -->
+        <section class="view" id="view-sentiment">
+          <div class="page-heading"><div><p class="eyebrow">MODULE 03 / PUBLIC MOOD SIGNALS</p><h1>Sentiment <span>Analysis</span></h1><p class="page-subtitle">Membaca kecenderungan bahasa pada kumpulan klaim sebagai sinyal konteks, bukan ukuran sikap masyarakat.</p></div><div class="heading-actions"><span class="info-pill">LEXICON-BASED · INDICATIVE</span></div></div>
+          <div class="sentiment-disclaimer"><strong>Catatan metodologi</strong><p>Versi ini menggunakan leksikon kata sederhana. Hasil dapat keliru karena negasi, sarkasme, bahasa daerah, dan konteks. Jangan gunakan untuk menilai individu atau membatasi kritik.</p></div>
+          <div class="sentiment-breakdown" id="sentimentBreakdown"></div>
+          <article class="panel"><div class="panel-heading"><div><h2>Komposisi sentimen per topik</h2><p>Jumlah klaim menurut topik dan kecenderungan leksikon</p></div></div><div id="sentimentTopicList" class="sentiment-topic-list"></div><div class="method-note">Dihitung dari <strong id="sentimentMethodCount">0</strong> klaim pada dataset aktif. Ini bukan survei representatif atau pengukuran opini publik.</div></article>
+        </section>
+
+        <!-- NARRATIVE NETWORK -->
+        <section class="view" id="view-network">
+          <div class="page-heading"><div><p class="eyebrow">MODULE 04 / AGGREGATE NETWORK ANALYSIS</p><h1>Narrative <span>Network</span></h1><p class="page-subtitle">Memvisualisasikan hubungan antara kanal/sumber agregat dan kelompok topik.</p></div><div class="heading-actions"><span class="info-pill">AGGREGATED DATA</span></div></div>
+          <div class="network-disclaimer"><strong>Ruang lingkup analisis</strong><p>Grafik ini menghubungkan nama kanal/sumber yang dicatat dengan topik klaim. Tidak ada identitas akun, jaringan pertemanan, atau hubungan antarindividu yang dikumpulkan.</p></div>
+          <div class="network-layout"><article class="panel network-panel"><div class="panel-heading"><div><h2>Peta hubungan kanal dan topik</h2><p>Ketebalan garis menunjukkan jumlah catatan yang menghubungkan keduanya</p></div></div><div id="networkMap" class="network-map"></div></article><aside class="panel network-stats-panel"><div class="panel-heading"><div><h2>Ringkasan jaringan</h2><p>Agregat workspace aktif</p></div></div><div id="networkStats" class="dataset-stats"></div><div class="network-edge-list"><h3>Hubungan teratas</h3><div id="networkEdges"></div></div></aside></div>
+        </section>
+
+        <!-- VERIFICATION -->
+        <section class="view" id="view-verification">
+          <div class="page-heading"><div><p class="eyebrow">MODULE 03 / HUMAN REVIEW</p><h1>Claim <span>Verification</span></h1><p class="page-subtitle">Catat pemeriksaan, bukti pendukung, dan keputusan verifikator secara transparan.</p></div><div class="heading-actions"><span class="review-counter" id="reviewCounter">0 klaim menunggu</span></div></div>
+          <div class="verification-layout"><div class="panel verification-list-panel"><div class="panel-heading"><div><h2>Antrian pemeriksaan</h2><p>Klaim yang belum memiliki keputusan final</p></div><select id="verificationFilter"><option value="pending">Perlu verifikasi</option><option value="all">Semua klaim</option></select></div><div id="verificationList" class="verification-list"></div></div><div class="panel verification-guide"><div class="guide-icon">✳</div><h2>Protokol verifikasi</h2><p class="guide-intro">Gunakan sumber pembanding dan konteks sebelum menetapkan status. Sistem tidak menentukan kebenaran secara otomatis.</p><div class="protocol-step"><span>01</span><div><strong>Identifikasi klaim</strong><p>Pisahkan pernyataan faktual dari opini, prediksi, dan pertanyaan.</p></div></div><div class="protocol-step"><span>02</span><div><strong>Periksa sumber primer</strong><p>Telusuri kanal resmi, dokumen asli, waktu, lokasi, dan pihak berwenang.</p></div></div><div class="protocol-step"><span>03</span><div><strong>Bandingkan bukti</strong><p>Catat tautan bukti dan jelaskan apakah bukti mendukung atau menyangkal klaim.</p></div></div><div class="protocol-step"><span>04</span><div><strong>Dokumentasikan keputusan</strong><p>Pilih status yang tepat dan tulis alasan yang dapat diaudit.</p></div></div><div class="guide-callout">Status verifikasi adalah keputusan manusia berdasarkan bukti yang dicatat, bukan hasil skor urgensi.</div></div></div>
+        </section>
+
+        <!-- EARLY WARNING -->
+        <section class="view" id="view-early-warning">
+          <div class="page-heading"><div><p class="eyebrow">MODULE 04 / PRIORITIZATION</p><h1>Early Warning <span>Center</span></h1><p class="page-subtitle">Prioritaskan pemeriksaan berdasarkan volume, kebaruan, keragaman kanal, dan status review.</p></div><div class="heading-actions"><span class="info-pill">RULE-BASED · EXPLAINABLE</span></div></div>
+          <div class="warning-intro"><div class="warning-symbol">⌁</div><div><strong>Skor urgensi bukan skor kebenaran.</strong><p>Skor hanya membantu menentukan isu mana yang sebaiknya diperiksa lebih dahulu. Klaim dengan skor tinggi belum tentu salah atau berbahaya.</p></div></div>
+          <div class="warning-summary-grid"><div class="mini-stat"><span>Prioritas tinggi</span><strong id="warnHigh">0</strong><small>Skor ≥ 70</small></div><div class="mini-stat"><span>Perlu perhatian</span><strong id="warnMedium">0</strong><small>Skor 45–69</small></div><div class="mini-stat"><span>Pola lonjakan</span><strong id="warnBurst">0</strong><small>Indikasi volume tidak biasa</small></div><div class="mini-stat"><span>Belum direview</span><strong id="warnPending">0</strong><small>Menunggu pemeriksaan manusia</small></div></div>
+          <div class="panel amplification-panel"><div class="panel-heading"><div><h2>Indikasi amplifikasi lintas kanal</h2><p>Pasangan klaim mirip yang muncul berdekatan pada beberapa kanal agregat</p></div><span class="candidate-count" id="amplificationCount">0</span></div><div id="amplificationList" class="amplification-list"></div><div class="method-note">Indikasi ini hanya kandidat pemeriksaan pola penyebaran. Kemiripan dan kedekatan waktu tidak membuktikan adanya bot, koordinasi, atau niat manipulatif.</div></div>
+          <div class="panel"><div class="panel-heading"><div><h2>Daftar prioritas pemeriksaan</h2><p>Setiap skor disertai faktor pembentuknya</p></div><select id="warningSort"><option value="score">Urgensi tertinggi</option><option value="recent">Terbaru</option><option value="volume">Volume terbesar</option></select></div><div id="warningList" class="warning-list"></div></div>
+        </section>
+
+        <!-- REPORTS -->
+        <section class="view" id="view-reports">
+          <div class="page-heading"><div><p class="eyebrow">MODULE 05 / TRANSPARENCY</p><h1>Reports <span>& Data</span></h1><p class="page-subtitle">Kelola dataset, ekspor hasil analisis, dan dokumentasikan metodologi.</p></div><div class="heading-actions"><button class="button button-primary" id="exportJson">↓ Export JSON</button></div></div>
+          <div class="report-cards"><article class="panel report-card"><span class="report-card-icon">⇧</span><h2>Import dataset</h2><p>Masukkan data berformat JSON atau CSV. Data akan divalidasi dan disimpan lokal pada browser ini.</p><button class="button button-secondary" id="importButton">Pilih file data</button><small>Format CSV / JSON · Maks. 5 MB</small></article><article class="panel report-card"><span class="report-card-icon">▤</span><h2>Export laporan</h2><p>Unduh ringkasan klaim, skor urgensi, status verifikasi, dan faktor analisis untuk dokumentasi.</p><button class="button button-secondary" id="exportCsv">Export CSV</button><small>CSV dapat dibuka dengan Excel / Sheets</small></article><article class="panel report-card"><span class="report-card-icon">⟲</span><h2>Dataset demo</h2><p>Kembalikan data ke skenario sintetis bawaan agar demo dapat diulang dengan kondisi konsisten.</p><button class="button button-secondary" id="resetDemo">Muat ulang dataset demo</button><small>Perubahan lokal saat ini akan diganti</small></article></div>
+          <div class="report-bottom-grid"><article class="panel"><div class="panel-heading"><div><h2>Ringkasan dataset</h2><p>Kondisi workspace saat ini</p></div></div><div class="dataset-stats" id="datasetStats"></div></article><article class="panel"><div class="panel-heading"><div><h2>Metodologi dan batasan</h2><p>Interpretasi hasil analisis</p></div></div><div class="method-list"><div><strong>01 · Pengelompokan</strong><p>Topik digunakan sebagai kelompok awal; kemiripan kata dipakai sebagai petunjuk, bukan penetapan fakta yang sama.</p></div><div><strong>02 · Skor urgensi</strong><p>Gabungan volume, kebaruan, keragaman kanal, dan kebutuhan review. Bukan probabilitas hoaks.</p></div><div><strong>03 · Sentimen</strong><p>Leksikon kata sederhana untuk indikasi agregat. Sarkasme, konteks, dan bahasa daerah dapat luput.</p></div><div><strong>04 · Amplifikasi</strong><p>Lonjakan volume adalah pola agregat. Tidak menyimpulkan akun otomatis, koordinasi, atau niat jahat.</p></div></div></article></div>
+          <div class="danger-zone panel"><div><strong>Hapus data workspace</strong><p>Menghapus dataset yang tersimpan pada browser ini. Unduh cadangan terlebih dahulu bila diperlukan.</p></div><button class="button button-danger" id="clearData">Hapus semua data</button></div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <!-- CLAIM DETAIL / EDIT DRAWER -->
+  <div class="overlay hidden" id="detailOverlay" role="dialog" aria-modal="true" aria-labelledby="detailTitle"><div class="drawer"><div class="drawer-header"><div><p class="eyebrow">CLAIM INTELLIGENCE RECORD</p><h2 id="detailTitle">Detail klaim</h2></div><button class="icon-button close-overlay" data-close-overlay aria-label="Tutup">×</button></div><div id="detailContent" class="drawer-content"></div></div></div>
+
+  <!-- ADD CLAIM MODAL -->
+  <div class="overlay hidden" id="addOverlay" role="dialog" aria-modal="true" aria-labelledby="addTitle"><div class="modal"><div class="drawer-header"><div><p class="eyebrow">DATA CONTRIBUTION</p><h2 id="addTitle">Tambah klaim baru</h2></div><button class="icon-button close-overlay" data-close-overlay aria-label="Tutup">×</button></div><form id="addClaimForm" class="form-grid"><label class="form-field full">Judul ringkas<input name="title" required maxlength="120" placeholder="Contoh: Informasi penutupan layanan air"></label><label class="form-field full">Isi klaim / narasi<textarea name="claim" rows="3" required maxlength="1000" placeholder="Tuliskan klaim sebagaimana ditemukan, tanpa menambahkan kesimpulan pribadi."></textarea></label><label class="form-field">Topik<select name="topic" required><option value="Bencana & keselamatan">Bencana & keselamatan</option><option value="Layanan publik">Layanan publik</option><option value="Infrastruktur">Infrastruktur</option><option value="Energi & utilitas">Energi &amp; utilitas</option><option value="Telekomunikasi & konektivitas">Telekomunikasi &amp; konektivitas</option><option value="Transportasi & logistik">Transportasi &amp; logistik</option><option value="Kesehatan publik">Kesehatan publik</option><option value="Informasi umum">Informasi umum</option><option value="Lainnya">Lainnya</option></select></label><label class="form-field">Wilayah / konteks<input name="region" maxlength="100" placeholder="Contoh: Wilayah simulasi"></label><label class="form-field">Sumber / kanal<input name="source" required maxlength="100" placeholder="Contoh: Laporan warga / RSS"></label><label class="form-field">Jumlah catatan pembahasan<input name="mentions" type="number" min="1" max="100000" value="1"></label><label class="form-field full">URL sumber (opsional)<input name="sourceUrl" type="url" placeholder="https://..."></label><div class="form-notice full">Gunakan data publik yang sah diakses atau data simulasi. Jangan memasukkan data pribadi, nomor telepon, alamat, atau identitas akun individu.</div><div class="form-actions full"><button type="button" class="button button-secondary" data-close-overlay>Batal</button><button class="button button-primary" type="submit">Simpan klaim</button></div></form></div></div>
+
+  <!-- HELP MODAL -->
+  <div class="overlay hidden" id="helpOverlay" role="dialog" aria-modal="true" aria-labelledby="helpTitle"><div class="modal help-modal"><div class="drawer-header"><div><p class="eyebrow">ABOUT THE PROJECT</p><h2 id="helpTitle">Tentang GARDA NARASI</h2></div><button class="icon-button close-overlay" data-close-overlay aria-label="Tutup">×</button></div><p>GARDA NARASI adalah prototipe analisis narasi dan peringatan dini informasi publik. Tujuannya membantu analis memahami perubahan isu dan memprioritaskan verifikasi, bukan mengotomatisasi penilaian kebenaran.</p><div class="help-grid"><div><strong>Local-first</strong><span>Data diproses pada browser dan disimpan di localStorage.</span></div><div><strong>Human-in-the-loop</strong><span>Keputusan verifikasi membutuhkan pemeriksaan manusia.</span></div><div><strong>Explainable</strong><span>Setiap skor memiliki faktor pembentuk yang dapat dilihat.</span></div><div><strong>Privacy-aware</strong><span>Tidak ada pemantauan individu atau pelabelan akun sebagai bot.</span></div></div><p class="small-muted">Versi prototipe 0.1.1 · Dataset demo bersifat sintetis dan tidak menggambarkan kejadian nyata.</p></div></div>
+
+  <input type="file" id="fileInput" accept=".csv,.json,application/json,text/csv" hidden>
+  <div class="toast-region" id="toastRegion" aria-live="polite"></div>
+  <footer class="mobile-footer">GARDA NARASI · DEMO ENVIRONMENT</footer>
+</body>
+</html>

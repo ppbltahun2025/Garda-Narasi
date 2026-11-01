@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fixture-lokal",
+    "name": "Fixture lokal (RSS sintetis)",
+    "type": "rss-file",
+    "url": "data/fixtures/feed-sintetis.xml",
+    "category": "uji",
+    "tier": "D",
+    "tierNote": "Data sintetis untuk uji pipeline offline",
+    "intervalMin": 60,
+    "lang": "id",
+    "notes": "Tidak mengakses jaringan. Seluruh item bersifat sintetis."
+  },
+  {
+    "id": "fixture-lokal-b",
+    "name": "Fixture lokal B (RSS sintetis)",
+    "type": "rss-file",
+    "url": "data/fixtures/feed-sintetis-2.xml",
+    "category": "uji",
+    "tier": "D",
+    "tierNote": "Data sintetis untuk uji amplifikasi lintas sumber",
+    "intervalMin": 60,
+    "lang": "id",
+    "notes": "Tidak mengakses jaringan. Jalankan bersama fixture A untuk melihat deteksi lintas sumber."
+  },
+  {
+    "id": "antara-terkini",
+    "name": "ANTARA — Berita Terkini (RSS)",
+    "type": "rss",
+    "url": "https://www.antaranews.com/rss/terkini.xml",
+    "category": "media nasional",
+    "tier": "B",
+    "tierNote": "Kantor berita nasional (penilaian awal pengelola)",
+    "intervalMin": 30,
+    "lang": "id",
+    "notes": "KANDIDAT. URL feed belum diverifikasi oleh paket ini. Baca ToS dan robots.txt, lalu centang konfirmasi sebelum mengaktifkan."
+  },
+  {
+    "id": "tempo-nasional",
+    "name": "Tempo — Nasional (RSS)",
+    "type": "rss",
+    "url": "https://rss.tempo.co/nasional",
+    "category": "media nasional",
+    "tier": "B",
+    "tierNote": "Media berdewan redaksi (penilaian awal pengelola)",
+    "intervalMin": 60,
+    "lang": "id",
+    "notes": "KANDIDAT. URL feed belum diverifikasi oleh paket ini. Periksa ToS dan robots.txt."
+  },
+  {
+    "id": "detik-index",
+    "name": "detikcom — Indeks (RSS)",
+    "type": "rss",
+    "url": "https://rss.detik.com/index.php/detikcom",
+    "category": "media nasional",
+    "tier": "B",
+    "tierNote": "Media daring besar (penilaian awal pengelola)",
+    "intervalMin": 60,
+    "lang": "id",
+    "notes": "KANDIDAT. URL feed belum diverifikasi oleh paket ini. Periksa ToS dan robots.txt."
+  },
+  {
+    "id": "cnn-nasional",
+    "name": "CNN Indonesia — Nasional (RSS)",
+    "type": "rss",
+    "url": "https://www.cnnindonesia.com/nasional/rss",
+    "category": "media nasional",
+    "tier": "B",
+    "tierNote": "Media daring besar (penilaian awal pengelola)",
+    "intervalMin": 60,
+    "lang": "id",
+    "notes": "KANDIDAT. URL feed belum diverifikasi oleh paket ini. Periksa ToS dan robots.txt."
+  },
+  {
+    "id": "bmkg-gempa-terkini",
+    "name": "BMKG — Gempa Terkini (data terbuka)",
+    "type": "api-json",
+    "url": "https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json",
+    "category": "sumber resmi",
+    "tier": "A",
+    "tierNote": "Lembaga resmi (BMKG)",
+    "intervalMin": 30,
+    "lang": "id",
+    "mapping": {
+      "itemsPath": "Infogempa.gempa",
+      "titleTemplate": "Gempa M{Magnitude} {Wilayah}",
+      "summaryTemplate": "BMKG mencatat gempa magnitudo {Magnitude} pada {Tanggal} pukul {Jam}, kedalaman {Kedalaman}. {Potensi}",
+      "linkTemplate": "https://www.bmkg.go.id/gempabumi/gempabumi-terkini.bmkg"
+    },
+    "notes": "KANDIDAT. Struktur JSON mengikuti dokumentasi data terbuka BMKG sejauh diketahui; verifikasi sebelum dipakai dan patuhi ketentuan atribusi."
+  }
+]

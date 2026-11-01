@@ -1,0 +1,487 @@
+{
+ "task": "pair-similarity",
+ "labels": [
+  0,
+  1
+ ],
+ "guideline": "label 1 = kedua teks merujuk narasi/peristiwa yang sama (parafrase); 0 = narasi berbeda, termasuk pasangan sulit yang berbagi topik atau kata.",
+ "items": [
+  {
+   "id": "PAIR-P01",
+   "a": "Pesan berantai menyebut jalur evakuasi Teluk Aruna ditutup mulai pukul 18.00 karena jembatan tidak aman.",
+   "b": "Beredar broadcast bahwa akses evakuasi di Teluk Aruna diblokir sejak jam 6 sore sebab jembatan berbahaya.",
+   "label": 1,
+   "split": "dev"
+  },
+  {
+   "id": "PAIR-N01",
+   "a": "Jembatan Merdeka putus diterjang banjir, akses warga terputus.",
+   "b": "Jembatan layang baru diresmikan dan dibuka untuk kendaraan umum.",
+   "label": 0,
+   "split": "dev"
+  },
+  {
+   "id": "PAIR-P02",
+   "a": "Air PDAM di Kecamatan Puspa katanya mati total tiga hari.",
+   "b": "Layanan air bersih Kecamatan Puspa dikabarkan berhenti selama 72 jam.",
+   "label": 1,
+   "split": "dev"
+  },
+  {
+   "id": "PAIR-N02",
+   "a": "Air PDAM di Kecamatan Puspa mati total tiga hari.",
+   "b": "Listrik di Kecamatan Puspa padam tiga jam karena perbaikan trafo.",
+   "label": 0,
+   "split": "dev"
+  },
+  {
+   "id": "PAIR-P03",
+   "a": "Video lama antrean bantuan diunggah ulang seolah kejadian hari ini.",
+   "b": "Rekaman antrean bantuan yang sudah lama dibagikan lagi dan diklaim terbaru.",
+   "label": 1,
+   "split": "dev"
+  },
+  {
+   "id": "PAIR-N03",
+   "a": "Harga cabai rawit naik drastis di pasar tradisional.",
+   "b": "Harga beras turun setelah operasi pasar dilakukan pemerintah.",
+   "label": 0,
+   "split": "dev"
+  },
+  {
+   "id": "PAIR-P04",
+   "a": "Jembatan Merdeka putus diterjang banjir, akses warga terputus.",
+   "b": "Banjir menjebol jembatan Merdeka sehingga warga tidak bisa lewat.",
+   "label": 1,
+   "split": "dev"
+  },
+  {
+   "id": "PAIR-N04",
+   "a": "Polisi menangkap pelaku pencurian motor di perbatasan kota.",
+   "b": "Polisi memperketat pengamanan malam tahun baru di pusat kota.",
+   "label": 0,
+   "split": "dev"
+  },
+  {
+   "id": "PAIR-P05",
+   "a": "Harga cabai rawit naik drastis di pasar tradisional.",
+   "b": "Cabai rawit melonjak harganya di pasar-pasar tradisional.",
+   "label": 1,
+   "split": "dev"
+  },
+  {
+   "id": "PAIR-N05",
+   "a": "Data jutaan pengguna aplikasi bocor di forum gelap.",
+   "b": "Aplikasi layanan publik menambah fitur pembayaran pajak daring.",
+   "label": 0,
+   "split": "dev"
+  },
+  {
+   "id": "PAIR-P06",
+   "a": "Polisi menangkap pelaku pencurian motor di perbatasan kota.",
+   "b": "Pelaku curanmor diringkus aparat kepolisian di batas kota.",
+   "label": 1,
+   "split": "dev"
+  },
+  {
+   "id": "PAIR-N06",
+   "a": "Puluhan siswa keracunan makanan di kantin sekolah.",
+   "b": "Puluhan siswa meraih medali olimpiade sains tingkat nasional.",
+   "label": 0,
+   "split": "dev"
+  },
+  {
+   "id": "PAIR-P07",
+   "a": "Pemerintah mengumumkan pendaftaran beasiswa dibuka hingga akhir bulan.",
+   "b": "Pendaftaran beasiswa dibuka sampai akhir bulan, kata pemerintah.",
+   "label": 1,
+   "split": "dev"
+  },
+  {
+   "id": "PAIR-N07",
+   "a": "BMKG memperingatkan cuaca ekstrem sepekan ke depan.",
+   "b": "BMKG mencatat gempa kecil di selatan Jawa tanpa potensi tsunami.",
+   "label": 0,
+   "split": "dev"
+  },
+  {
+   "id": "PAIR-P08",
+   "a": "Data jutaan pengguna aplikasi dikabarkan bocor di forum gelap.",
+   "b": "Jutaan data pengguna aplikasi diduga bocor dan dijual di forum.",
+   "label": 1,
+   "split": "dev"
+  },
+  {
+   "id": "PAIR-N08",
+   "a": "Beredar kabar sekolah diliburkan karena banjir.",
+   "b": "Beredar kabar harga BBM naik besok pagi.",
+   "label": 0,
+   "split": "dev"
+  },
+  {
+   "id": "PAIR-P09",
+   "a": "Listrik padam di tiga kecamatan sejak sore.",
+   "b": "Pemadaman listrik melanda tiga kecamatan mulai sore hari.",
+   "label": 1,
+   "split": "dev"
+  },
+  {
+   "id": "PAIR-N09",
+   "a": "Kebakaran lahan gambut menyebabkan asap tebal di kota.",
+   "b": "Kebakaran pasar tradisional menghanguskan puluhan kios.",
+   "label": 0,
+   "split": "dev"
+  },
+  {
+   "id": "PAIR-P10",
+   "a": "Puluhan siswa keracunan makanan di kantin sekolah.",
+   "b": "Keracunan makanan menimpa puluhan murid setelah makan di kantin.",
+   "label": 1,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-N10",
+   "a": "Mahasiswa berunjuk rasa menuntut transparansi anggaran.",
+   "b": "Mahasiswa menerima beasiswa untuk melanjutkan studi ke luar negeri.",
+   "label": 0,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-P11",
+   "a": "BMKG memperingatkan cuaca ekstrem akan terjadi sepekan ke depan.",
+   "b": "Cuaca ekstrem selama seminggu ke depan diperingatkan oleh BMKG.",
+   "label": 1,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-N11",
+   "a": "Rumah sakit penuh karena lonjakan pasien demam berdarah.",
+   "b": "Rumah sakit baru dibuka dengan fasilitas rawat inap lengkap.",
+   "label": 0,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-P12",
+   "a": "Kereta jarak jauh menambah jadwal keberangkatan saat libur panjang.",
+   "b": "Saat libur panjang, jadwal keberangkatan kereta jarak jauh ditambah.",
+   "label": 1,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-N12",
+   "a": "Pelabuhan ditutup sementara akibat gelombang tinggi.",
+   "b": "Bandara ditutup sementara akibat abu vulkanik.",
+   "label": 0,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-P13",
+   "a": "Warga diminta mengungsi karena status gunung naik menjadi awas.",
+   "b": "Status gunung dinaikkan ke awas sehingga warga diimbau mengungsi.",
+   "label": 1,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-N13",
+   "a": "Vaksin booster gratis tersedia di posyandu setiap Selasa.",
+   "b": "Vaksin disebut-sebut menyebabkan penyakit baru menurut pesan berantai.",
+   "label": 0,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-P14",
+   "a": "Beredar kabar sekolah diliburkan seminggu karena banjir.",
+   "b": "Kabarnya sekolah libur sepekan akibat banjir, tapi belum ada konfirmasi.",
+   "label": 1,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-N14",
+   "a": "Penipuan berkedok tautan bantuan tunai marak.",
+   "b": "Bantuan tunai disalurkan resmi melalui kantor pos.",
+   "label": 0,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-P15",
+   "a": "Bantuan sosial tunai disalurkan kepada keluarga penerima manfaat bulan ini.",
+   "b": "Bansos tunai bulan ini dibagikan untuk keluarga penerima manfaat.",
+   "label": 1,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-N15",
+   "a": "Jalan tol segmen baru dibuka akhir pekan ini.",
+   "b": "Jalan nasional ditutup akhir pekan ini untuk perbaikan aspal.",
+   "label": 0,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-P16",
+   "a": "Hoaks gempa besar pekan ini beredar di grup percakapan.",
+   "b": "Pesan tentang gempa besar minggu ini tersebar di grup chat dan dibantah.",
+   "label": 1,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-N16",
+   "a": "Sungai tercemar limbah pabrik, ikan mati.",
+   "b": "Sungai meluap akibat hujan deras, permukiman tergenang.",
+   "label": 0,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-P17",
+   "a": "Rumah sakit penuh karena lonjakan pasien demam berdarah.",
+   "b": "Lonjakan pasien demam berdarah membuat rumah sakit kehabisan tempat.",
+   "label": 1,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-N17",
+   "a": "Listrik padam di tiga kecamatan sejak sore.",
+   "b": "Jaringan internet lumpuh di tiga kecamatan sejak sore.",
+   "label": 0,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-P18",
+   "a": "Pelabuhan ditutup sementara akibat gelombang tinggi.",
+   "b": "Gelombang tinggi memaksa pelabuhan ditutup untuk sementara.",
+   "label": 1,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-N18",
+   "a": "Pos pengungsian dipindahkan ke lapangan desa.",
+   "b": "Posko kesehatan didirikan di lapangan desa.",
+   "label": 0,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-P19",
+   "a": "Subsidi BBM akan dikurangi tahun depan menurut kabar yang beredar.",
+   "b": "Beredar informasi bahwa subsidi BBM dikurangi mulai tahun depan.",
+   "label": 1,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-N19",
+   "a": "Tersangka korupsi proyek jalan dituntut delapan tahun penjara.",
+   "b": "Tersangka penipuan investasi ditangkap di bandara.",
+   "label": 0,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-P20",
+   "a": "Kebakaran lahan gambut menyebabkan asap tebal di kota.",
+   "b": "Asap tebal menyelimuti kota akibat terbakarnya lahan gambut.",
+   "label": 1,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-N20",
+   "a": "Sinyal seluler terganggu di seluruh kota.",
+   "b": "Tarif layanan seluler resmi dinaikkan oleh operator.",
+   "label": 0,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-P21",
+   "a": "Mahasiswa berunjuk rasa di depan gedung DPRD menuntut transparansi anggaran.",
+   "b": "Demo mahasiswa di gedung DPRD menuntut anggaran dibuka secara transparan.",
+   "label": 1,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-N21",
+   "a": "Warga diminta mengungsi karena status gunung naik menjadi awas.",
+   "b": "Warga diminta menghemat air selama musim kemarau.",
+   "label": 0,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-P22",
+   "a": "Tersangka korupsi proyek jalan dituntut delapan tahun penjara.",
+   "b": "Jaksa menuntut delapan tahun penjara bagi tersangka korupsi proyek jalan.",
+   "label": 1,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-N22",
+   "a": "Hoaks gempa besar pekan ini beredar di grup chat.",
+   "b": "Hoaks vaksin berbahaya beredar di grup chat.",
+   "label": 0,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-P23",
+   "a": "Sinyal seluler terganggu di seluruh kota sejak pagi.",
+   "b": "Gangguan sinyal telepon seluler terjadi di sepanjang kota sejak pagi hari.",
+   "label": 1,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-N23",
+   "a": "Bansos tunai disalurkan kepada keluarga penerima manfaat.",
+   "b": "Beasiswa disalurkan kepada pelajar berprestasi.",
+   "label": 0,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-P24",
+   "a": "Pos pengungsian dipindahkan ke lapangan desa karena lokasi lama tergenang.",
+   "b": "Lokasi pengungsian pindah ke lapangan desa sebab tempat sebelumnya terendam.",
+   "label": 1,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-N24",
+   "a": "Harga minyak goreng langka di swalayan.",
+   "b": "Stok gas elpiji langka di sejumlah pangkalan.",
+   "label": 0,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-P25",
+   "a": "Vaksin booster gratis tersedia di posyandu setiap Selasa.",
+   "b": "Setiap hari Selasa posyandu menyediakan vaksin booster tanpa biaya.",
+   "label": 1,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-N25",
+   "a": "Subsidi BBM akan dikurangi tahun depan.",
+   "b": "Subsidi pupuk akan ditambah tahun depan.",
+   "label": 0,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-P26",
+   "a": "Penipuan berkedok tautan bantuan tunai marak di media sosial.",
+   "b": "Modus tautan bantuan tunai palsu ramai menipu warga lewat media sosial.",
+   "label": 1,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-N26",
+   "a": "Kereta jarak jauh menambah jadwal saat libur panjang.",
+   "b": "Bus antarkota menambah armada saat libur panjang.",
+   "label": 0,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-P27",
+   "a": "Jalan tol segmen baru dibuka untuk umum akhir pekan ini.",
+   "b": "Ruas tol baru dapat dilewati masyarakat mulai akhir pekan ini.",
+   "label": 1,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-N27",
+   "a": "Pemerintah daerah membantah kabar penutupan rumah sakit rujukan.",
+   "b": "Pemerintah daerah membantah kabar pemotongan gaji pegawai.",
+   "label": 0,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-P28",
+   "a": "Harga minyak goreng langka dan mahal di pasar swalayan.",
+   "b": "Minyak goreng sulit ditemukan dan harganya mahal di swalayan.",
+   "label": 1,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-N28",
+   "a": "Jembatan retak dan ditutup untuk kendaraan berat.",
+   "b": "Jembatan gantung baru dibangun untuk menghubungkan dua desa.",
+   "label": 0,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-P29",
+   "a": "Sungai tercemar limbah pabrik, ikan-ikan mati mengambang.",
+   "b": "Limbah pabrik mencemari sungai hingga ikan mati terapung.",
+   "label": 1,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-N29",
+   "a": "Video lama antrean bantuan diunggah ulang seolah kejadian hari ini.",
+   "b": "Video pelantikan kepala daerah ditayangkan langsung hari ini.",
+   "label": 0,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-P30",
+   "a": "Pemerintah daerah membantah kabar penutupan rumah sakit rujukan.",
+   "b": "Kabar penutupan rumah sakit rujukan dibantah pemerintah daerah.",
+   "label": 1,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-N30",
+   "a": "Cuaca ekstrem membuat penerbangan ditunda.",
+   "b": "Penerbangan tambahan disiapkan untuk arus mudik.",
+   "label": 0,
+   "split": "test"
+  },
+  {
+   "id": "PAIR-C01",
+   "a": "Katanya air PDAM mati total besok, kabar dari grup warga.",
+   "b": "Info dari grup warga: besok pasokan air PDAM dihentikan seluruhnya.",
+   "label": 1,
+   "split": "challenge"
+  },
+  {
+   "id": "PAIR-C02",
+   "a": "Banjir bandang menerjang tiga desa di lereng gunung.",
+   "b": "Tiga desa di kaki gunung diterjang banjir bandang.",
+   "label": 1,
+   "split": "challenge"
+  },
+  {
+   "id": "PAIR-C03",
+   "a": "Gue denger sih tarif listrik bakal naik bulan depan.",
+   "b": "Beredar kabar tarif listrik naik bulan depan.",
+   "label": 1,
+   "split": "challenge"
+  },
+  {
+   "id": "PAIR-C04",
+   "a": "Pemerintah resmi menaikkan tarif listrik bulan depan.",
+   "b": "Pemerintah menurunkan tarif listrik bulan depan.",
+   "label": 0,
+   "split": "challenge"
+  },
+  {
+   "id": "PAIR-C05",
+   "a": "Jalan di depan kampus ditutup karena ada demo mahasiswa.",
+   "b": "Jalan di depan kampus ditutup karena perbaikan aspal.",
+   "label": 0,
+   "split": "challenge"
+  },
+  {
+   "id": "PAIR-C06",
+   "a": "Rumah sakit A menolak pasien BPJS, kata warganet.",
+   "b": "Rumah sakit B melayani pasien BPJS tanpa antre panjang.",
+   "label": 0,
+   "split": "challenge"
+  },
+  {
+   "id": "PAIR-C07",
+   "a": "Air bersih langka, warga antre di mobil tangki.",
+   "b": "Warga mengantre di mobil tangki karena air bersih sulit didapat.",
+   "label": 1,
+   "split": "challenge"
+  },
+  {
+   "id": "PAIR-C08",
+   "a": "Kebakaran di pasar terjadi dini hari, belasan kios hangus.",
+   "b": "Belasan kios hangus dilalap api di pasar pada dini hari.",
+   "label": 1,
+   "split": "challenge"
+  }
+ ],
+ "split_note": "Split dev/test stratif per kelas (30%/70%, urutan sesuai berkas); split \"challenge\" ditulis terpisah dan tidak dipakai menyetel model."
+}

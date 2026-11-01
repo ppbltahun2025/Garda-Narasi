@@ -1,0 +1,481 @@
+{
+ "task": "epistemic",
+ "labels": [
+  "unverified",
+  "speculation",
+  "opinion",
+  "factual"
+ ],
+ "guideline": "unverified = klaim beredar tanpa sumber/konfirmasi; speculation = dugaan/prediksi; opinion = penilaian subjektif; factual = pernyataan atributif yang melaporkan data/keputusan (bukan bukti kebenaran).",
+ "items": [
+  {
+   "id": "EPI-001",
+   "text": "Beredar pesan berantai yang menyebut seluruh ATM akan diblokir besok.",
+   "label": "unverified",
+   "split": "dev"
+  },
+  {
+   "id": "EPI-002",
+   "text": "Diduga kebocoran data berasal dari server pihak ketiga.",
+   "label": "speculation",
+   "split": "dev"
+  },
+  {
+   "id": "EPI-003",
+   "text": "Menurut saya pemerintah daerah terlalu lamban menangani banjir.",
+   "label": "opinion",
+   "split": "dev"
+  },
+  {
+   "id": "EPI-004",
+   "text": "BMKG mencatat gempa magnitudo 5,2 pada pukul 03.15 WIB dengan kedalaman 10 kilometer.",
+   "label": "factual",
+   "split": "dev"
+  },
+  {
+   "id": "EPI-005",
+   "text": "Katanya air PDAM dicampur zat berbahaya, tapi belum ada sumber jelas.",
+   "label": "unverified",
+   "split": "dev"
+  },
+  {
+   "id": "EPI-006",
+   "text": "Kemungkinan harga beras naik pada bulan depan akibat cuaca.",
+   "label": "speculation",
+   "split": "dev"
+  },
+  {
+   "id": "EPI-007",
+   "text": "Seharusnya jalan itu diperbaiki sejak lama, sungguh mengecewakan.",
+   "label": "opinion",
+   "split": "dev"
+  },
+  {
+   "id": "EPI-008",
+   "text": "Pemerintah kota mengumumkan jalan ditutup mulai 20 Juni berdasarkan surat edaran resmi.",
+   "label": "factual",
+   "split": "dev"
+  },
+  {
+   "id": "EPI-009",
+   "text": "Kabarnya jembatan utama putus, belum terkonfirmasi pihak berwenang.",
+   "label": "unverified",
+   "split": "dev"
+  },
+  {
+   "id": "EPI-010",
+   "text": "Bisa jadi jembatan itu retak karena beban kendaraan berlebih.",
+   "label": "speculation",
+   "split": "dev"
+  },
+  {
+   "id": "EPI-011",
+   "text": "Saya rasa kebijakan baru ini tidak adil bagi pedagang kecil.",
+   "label": "opinion",
+   "split": "dev"
+  },
+  {
+   "id": "EPI-012",
+   "text": "Menurut data BPS, inflasi bulanan tercatat 0,2 persen.",
+   "label": "factual",
+   "split": "dev"
+  },
+  {
+   "id": "EPI-013",
+   "text": "Video viral diklaim menunjukkan kerusuhan hari ini padahal tanpa sumber.",
+   "label": "unverified",
+   "split": "dev"
+  },
+  {
+   "id": "EPI-014",
+   "text": "Banjir diperkirakan meluas jika hujan deras berlanjut hingga malam.",
+   "label": "speculation",
+   "split": "dev"
+  },
+  {
+   "id": "EPI-015",
+   "text": "Aplikasi layanan publik ini jelek sekali dan bikin kesal.",
+   "label": "opinion",
+   "split": "dev"
+  },
+  {
+   "id": "EPI-016",
+   "text": "BNPB melaporkan 1.250 warga mengungsi di 12 titik posko.",
+   "label": "factual",
+   "split": "dev"
+  },
+  {
+   "id": "EPI-017",
+   "text": "Konon seluruh sekolah akan diliburkan seminggu, info ini tersebar di grup.",
+   "label": "unverified",
+   "split": "dev"
+  },
+  {
+   "id": "EPI-018",
+   "text": "Patut diduga ada kelalaian dalam proyek drainase tersebut.",
+   "label": "speculation",
+   "split": "dev"
+  },
+  {
+   "id": "EPI-019",
+   "text": "Sebaiknya sekolah tidak buru-buru dibuka kembali.",
+   "label": "opinion",
+   "split": "dev"
+  },
+  {
+   "id": "EPI-020",
+   "text": "Juru bicara kementerian menyatakan pendaftaran dibuka hingga 30 Juni.",
+   "label": "factual",
+   "split": "dev"
+  },
+  {
+   "id": "EPI-021",
+   "text": "Unggahan yang dibagikan ulang mengklaim vaksin menyebabkan penyakit baru.",
+   "label": "unverified",
+   "split": "test"
+  },
+  {
+   "id": "EPI-022",
+   "text": "Dikhawatirkan wabah menyebar ke wilayah lain pekan depan.",
+   "label": "speculation",
+   "split": "test"
+  },
+  {
+   "id": "EPI-023",
+   "text": "Kinerja petugas hebat, kami bangga dengan mereka.",
+   "label": "opinion",
+   "split": "test"
+  },
+  {
+   "id": "EPI-024",
+   "text": "Dinas kesehatan mengonfirmasi 45 kasus demam berdarah sepanjang bulan ini.",
+   "label": "factual",
+   "split": "test"
+  },
+  {
+   "id": "EPI-025",
+   "text": "Dikabarkan harga BBM naik dua kali lipat besok, belum diverifikasi.",
+   "label": "unverified",
+   "split": "test"
+  },
+  {
+   "id": "EPI-026",
+   "text": "Jangan-jangan pemadaman ini sengaja dilakukan menjelang pengumuman.",
+   "label": "speculation",
+   "split": "test"
+  },
+  {
+   "id": "EPI-027",
+   "text": "Menurutku subsidi itu salah sasaran dan harus dievaluasi.",
+   "label": "opinion",
+   "split": "test"
+  },
+  {
+   "id": "EPI-028",
+   "text": "Siaran pers resmi menyebutkan jadwal pemeliharaan jaringan pada Minggu pukul 22.00.",
+   "label": "factual",
+   "split": "test"
+  },
+  {
+   "id": "EPI-029",
+   "text": "Pesan siaran menyebut pos pengungsian ditutup, sumber tidak jelas.",
+   "label": "unverified",
+   "split": "test"
+  },
+  {
+   "id": "EPI-030",
+   "text": "Sepertinya antrean panjang disebabkan sistem yang sedang bermasalah.",
+   "label": "speculation",
+   "split": "test"
+  },
+  {
+   "id": "EPI-031",
+   "text": "Sayang sekali taman kota dibiarkan kotor, memalukan.",
+   "label": "opinion",
+   "split": "test"
+  },
+  {
+   "id": "EPI-032",
+   "text": "Berdasarkan laporan resmi, jembatan dibuka kembali setelah pemeriksaan teknis.",
+   "label": "factual",
+   "split": "test"
+  },
+  {
+   "id": "EPI-033",
+   "text": "Tersebar foto yang diklaim banjir terkini, belum ada konfirmasi lokasi.",
+   "label": "unverified",
+   "split": "test"
+  },
+  {
+   "id": "EPI-034",
+   "text": "Berpotensi terjadi longsor susulan di lereng yang gundul.",
+   "label": "speculation",
+   "split": "test"
+  },
+  {
+   "id": "EPI-035",
+   "text": "Pelayanan di puskesmas itu payah, tidak becus melayani warga.",
+   "label": "opinion",
+   "split": "test"
+  },
+  {
+   "id": "EPI-036",
+   "text": "Pengadilan menetapkan sidang lanjutan pada 15 Juli.",
+   "label": "factual",
+   "split": "test"
+  },
+  {
+   "id": "EPI-037",
+   "text": "Ada yang bilang listrik padam total tiga hari, tanpa bukti pengumuman.",
+   "label": "unverified",
+   "split": "test"
+  },
+  {
+   "id": "EPI-038",
+   "text": "Prediksi sementara, inflasi akan meningkat akhir tahun.",
+   "label": "speculation",
+   "split": "test"
+  },
+  {
+   "id": "EPI-039",
+   "text": "Harusnya pejabat mundur saja kalau tidak sanggup bekerja.",
+   "label": "opinion",
+   "split": "test"
+  },
+  {
+   "id": "EPI-040",
+   "text": "Polisi menangkap dua tersangka dan menyita barang bukti sebanyak 3 unit kendaraan.",
+   "label": "factual",
+   "split": "test"
+  },
+  {
+   "id": "EPI-041",
+   "text": "Broadcast mengatasnamakan dinas meminta warga transfer uang, kebenarannya diragukan.",
+   "label": "unverified",
+   "split": "test"
+  },
+  {
+   "id": "EPI-042",
+   "text": "Barangkali penyebab kebakaran adalah korsleting listrik.",
+   "label": "speculation",
+   "split": "test"
+  },
+  {
+   "id": "EPI-043",
+   "text": "Saya setuju penutupan tambang karena merusak lingkungan.",
+   "label": "opinion",
+   "split": "test"
+  },
+  {
+   "id": "EPI-044",
+   "text": "PLN menyatakan pasokan listrik pulih secara bertahap sejak pukul 18.00.",
+   "label": "factual",
+   "split": "test"
+  },
+  {
+   "id": "EPI-045",
+   "text": "Disebut-sebut bantuan tunai cair besok lewat tautan, belum ada klarifikasi.",
+   "label": "unverified",
+   "split": "test"
+  },
+  {
+   "id": "EPI-046",
+   "text": "Dugaan awal, ledakan dipicu kebocoran gas.",
+   "label": "speculation",
+   "split": "test"
+  },
+  {
+   "id": "EPI-047",
+   "text": "Kebijakan zonasi menurut kami sangat merugikan siswa pinggiran.",
+   "label": "opinion",
+   "split": "test"
+  },
+  {
+   "id": "EPI-048",
+   "text": "Kementerian menetapkan harga acuan beras Rp12.500 per kilogram.",
+   "label": "factual",
+   "split": "test"
+  },
+  {
+   "id": "EPI-049",
+   "text": "Beredar rekaman suara yang mengaku petugas dan menyuruh warga mengungsi.",
+   "label": "unverified",
+   "split": "test"
+  },
+  {
+   "id": "EPI-050",
+   "text": "Tampaknya cuaca ekstrem akan berlangsung sampai akhir pekan.",
+   "label": "speculation",
+   "split": "test"
+  },
+  {
+   "id": "EPI-051",
+   "text": "Menurut saya penanganan bencana kali ini luar biasa baik.",
+   "label": "opinion",
+   "split": "test"
+  },
+  {
+   "id": "EPI-052",
+   "text": "Data menunjukkan jumlah pengguna transportasi umum naik 8 persen.",
+   "label": "factual",
+   "split": "test"
+  },
+  {
+   "id": "EPI-053",
+   "text": "Klaim bahwa obat tertentu menyembuhkan semua penyakit viral di media sosial.",
+   "label": "unverified",
+   "split": "test"
+  },
+  {
+   "id": "EPI-054",
+   "text": "Spekulasi bermunculan soal penyebab jaringan lumpuh.",
+   "label": "speculation",
+   "split": "test"
+  },
+  {
+   "id": "EPI-055",
+   "text": "Mestinya transportasi umum dibuat gratis, pemerintah pelit.",
+   "label": "opinion",
+   "split": "test"
+  },
+  {
+   "id": "EPI-056",
+   "text": "Hasil pemeriksaan laboratorium menyatakan sampel air memenuhi baku mutu.",
+   "label": "factual",
+   "split": "test"
+  },
+  {
+   "id": "EPI-057",
+   "text": "Kabarnya pelabuhan ditutup permanen, informasi belum dikonfirmasi.",
+   "label": "unverified",
+   "split": "test"
+  },
+  {
+   "id": "EPI-058",
+   "text": "Mungkin saja penutupan jalan diperpanjang jika perbaikan belum selesai.",
+   "label": "speculation",
+   "split": "test"
+  },
+  {
+   "id": "EPI-059",
+   "text": "Aku kecewa dengan pengumuman itu, tidak masuk akal.",
+   "label": "opinion",
+   "split": "test"
+  },
+  {
+   "id": "EPI-060",
+   "text": "Pemerintah provinsi mengumumkan penambahan 3 puskesmas pembantu.",
+   "label": "factual",
+   "split": "test"
+  },
+  {
+   "id": "EPI-061",
+   "text": "Pesan berantai mengatakan gempa besar akan terjadi pekan ini.",
+   "label": "unverified",
+   "split": "test"
+  },
+  {
+   "id": "EPI-062",
+   "text": "Diprakirakan gelombang tinggi terjadi di perairan selatan.",
+   "label": "speculation",
+   "split": "test"
+  },
+  {
+   "id": "EPI-063",
+   "text": "Menurut kami program bantuan ini bagus tetapi perlu pengawasan.",
+   "label": "opinion",
+   "split": "test"
+  },
+  {
+   "id": "EPI-064",
+   "text": "Dinas pendidikan merilis jadwal ujian tahun ajaran baru secara resmi.",
+   "label": "factual",
+   "split": "test"
+  },
+  {
+   "id": "EPI-C01",
+   "text": "denger-denger besok bank pada tutup, gatau bener apa nggak",
+   "label": "unverified",
+   "split": "challenge"
+  },
+  {
+   "id": "EPI-C02",
+   "text": "ada isu pemadaman besar nih, belum ada pengumuman resmi dari PLN",
+   "label": "unverified",
+   "split": "challenge"
+  },
+  {
+   "id": "EPI-C03",
+   "text": "WA grup RT lagi ramai bahas air mau diputus, sumbernya tidak jelas",
+   "label": "unverified",
+   "split": "challenge"
+  },
+  {
+   "id": "EPI-C04",
+   "text": "Entah benar atau tidak, foto ini lagi ramai dibagikan",
+   "label": "unverified",
+   "split": "challenge"
+  },
+  {
+   "id": "EPI-C05",
+   "text": "kalau hujan terus, kayaknya sungai bakal meluap",
+   "label": "speculation",
+   "split": "challenge"
+  },
+  {
+   "id": "EPI-C06",
+   "text": "kemungkinan besar penyebabnya korsleting, tapi tim masih menyelidiki",
+   "label": "speculation",
+   "split": "challenge"
+  },
+  {
+   "id": "EPI-C07",
+   "text": "ini sih tanda-tanda krisis pangan bakal datang",
+   "label": "speculation",
+   "split": "challenge"
+  },
+  {
+   "id": "EPI-C08",
+   "text": "parah banget kerjaan dinasnya, tidak ada yang benar",
+   "label": "opinion",
+   "split": "challenge"
+  },
+  {
+   "id": "EPI-C09",
+   "text": "gila sih keren banget layanan barunya, wajib dicoba",
+   "label": "opinion",
+   "split": "challenge"
+  },
+  {
+   "id": "EPI-C10",
+   "text": "dari sudut pandang saya, aturan ini terlalu kaku",
+   "label": "opinion",
+   "split": "challenge"
+  },
+  {
+   "id": "EPI-C11",
+   "text": "Jumlah pelamar tercatat 3.400 orang hingga Jumat sore",
+   "label": "factual",
+   "split": "challenge"
+  },
+  {
+   "id": "EPI-C12",
+   "text": "Wali kota meresmikan taman baru seluas dua hektare pagi tadi",
+   "label": "factual",
+   "split": "challenge"
+  },
+  {
+   "id": "EPI-C13",
+   "text": "Layanan paspor dipindahkan ke gedung baru mulai Senin",
+   "label": "factual",
+   "split": "challenge"
+  },
+  {
+   "id": "EPI-C14",
+   "text": "Tarif tol naik Rp2.000 sesuai keputusan menteri",
+   "label": "factual",
+   "split": "challenge"
+  }
+ ],
+ "split_note": "Split dev/test stratif per kelas (30%/70%, urutan sesuai berkas); split \"challenge\" ditulis terpisah dan tidak dipakai menyetel model."
+}
